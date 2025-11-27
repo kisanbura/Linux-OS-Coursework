@@ -72,27 +72,27 @@ Kernel Info (uname -a)
 
 <img width="2302" height="222" alt="uname  -a ss" src="https://github.com/user-attachments/assets/e8b12e47-5aae-4e4b-a0c0-fac5a04e3f06" />
 
-
+-------------------------------------------------------------------------------------------------------------
 Memory Info (free -h)
 
 <img width="1846" height="218" alt="free -h ss" src="https://github.com/user-attachments/assets/e5429694-fb81-49ad-a9e4-66e39741a9cf" />
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Disk Info (df -h)
 
 <img width="1496" height="404" alt="df -h ss" src="https://github.com/user-attachments/assets/b35e0b3a-51fe-4b8e-b447-97d5181a63fc" />
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------
 Network Info (ip addr)
 
 <img width="2248" height="606" alt="ip addr screenshot powershell" src="https://github.com/user-attachments/assets/a2b00ed5-d72b-46ae-9492-8e53ba3bd83d" />
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 Release Info (lsb_release -a)
 <img width="936" height="316" alt="lsb_release -a ss" src="https://github.com/user-attachments/assets/398e31c8-acd4-4169-b34a-ff21d0032018" />
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Reflection
 
