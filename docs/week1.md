@@ -5,7 +5,7 @@ Week 1 — System Planning & Initial Setup
 
 
 
-
+-----------------------------------------------------------------------------------------
 
 2. Distribution Selection Justification
 
@@ -25,7 +25,7 @@ Ubuntu is better for beginners and aligns with industry practice.
 
 
 
-
+-----------------------------------------------------------------------------------------
 
 3. Workstation Configuration Decision
 
@@ -44,7 +44,7 @@ Easier workflow (copy/paste, browser available).
 Matches required “dual-system” architecture.
 
 
-
+-----------------------------------------------------------------------------------------
 4. Network Configuration Documentation
 VirtualBox Network Setup
 
@@ -62,31 +62,38 @@ From ip addr command:
 
 enp0s8 = 192.168.56.3/24 (Host-Only Network)
 
-(Insert ip addr screenshot)
+<img width="1418" height="1014" alt="ip addr screenshot" src="https://github.com/user-attachments/assets/a292e48d-4465-46cc-878d-3fbcef892265" />
+
+
+-----------------------------------------------------------------------------------------
 
 5. System Specifications (CLI Evidence)
 Kernel Info (uname -a)
 
-(Insert screenshot)
+<img width="2302" height="222" alt="uname  -a ss" src="https://github.com/user-attachments/assets/e8b12e47-5aae-4e4b-a0c0-fac5a04e3f06" />
+
 
 Memory Info (free -h)
 
-(Insert screenshot)
+<img width="1846" height="218" alt="free -h ss" src="https://github.com/user-attachments/assets/e5429694-fb81-49ad-a9e4-66e39741a9cf" />
+
 
 Disk Info (df -h)
 
-(Insert screenshot)
+<img width="1496" height="404" alt="df -h ss" src="https://github.com/user-attachments/assets/b35e0b3a-51fe-4b8e-b447-97d5181a63fc" />
+
+
 
 Network Info (ip addr)
 
-(Insert screenshot)
+<img width="2248" height="606" alt="ip addr screenshot powershell" src="https://github.com/user-attachments/assets/a2b00ed5-d72b-46ae-9492-8e53ba3bd83d" />
+
 
 Release Info (lsb_release -a)
+<img width="936" height="316" alt="lsb_release -a ss" src="https://github.com/user-attachments/assets/398e31c8-acd4-4169-b34a-ff21d0032018" />
 
-(Insert screenshot)
+
 
 6. Reflection
-
-Example reflection you can copy:
 
 This week I set up my Ubuntu Server VM and successfully connected to it using SSH from my host computer. I configured VirtualBox with both NAT and a Host-Only adapter and verified that the server received the correct IP address. I also collected system information using various Linux commands and created an architecture diagram. I initially encountered an issue where the host-only adapter was disabled and the VM did not receive an IP address, but fixing the adapter settings resolved the problem. Through this process I gained confidence in VirtualBox networking and remote administration.
