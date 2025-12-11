@@ -1,6 +1,6 @@
 Week 2 - Security Planning and Testing Methodology 
 
-1. Performance Testing Plan
+1. **Performance Testing Plan**
 
    ## 
 To evaluate the performance of my Ubuntu Server VM, I will use a remote monitoring approach where all measurements are taken through the SSH connection from my workstation. I will measure CPU, memory, disk I/O, network throughput, and application response time under different workloads.
