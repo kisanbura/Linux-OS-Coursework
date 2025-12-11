@@ -85,31 +85,31 @@ I will use the following tools and commands to measure system performance under 
 
 **CPU & Memory Monitoring**
 
-top — real-time CPU and memory usage
-htop — improved interactive monitoring
-vmstat — process scheduling and memory pressure
-mpstat — per-core CPU usage breakdown
+top — real-time CPU and memory usage ##
+htop — improved interactive monitoring ##
+vmstat — process scheduling and memory pressure ##
+mpstat — per-core CPU usage breakdown ##
 ##
 
 **Disk I/O Monitoring**
 
-iostat — throughput and IOPS
-df -h — filesystem space usage
-Compare before/after fio runs
+iostat — throughput and IOPS ##
+df -h — filesystem space usage ##
+Compare before/after fio runs ##
 ##
 
 **Network Monitoring**
 
-ping — latency measurement
-iperf3 — throughput testing between server and workstation
-ss -tulpn — open ports and active connections
+ping — latency measurement ##
+iperf3 — throughput testing between server and workstation ##
+ss -tulpn — open ports and active connections ##
 ##
 
 **Server Performance Monitoring**
 
-curl — HTTP response time
-ab (ApacheBench) — HTTP load generation for nginx
-
+curl — HTTP response time ##
+ab (ApacheBench) — HTTP load generation for nginx ##
+ 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
