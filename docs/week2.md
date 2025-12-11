@@ -29,7 +29,7 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 --------------------------------------------------------------------------------------
 
 
- 2. ** Security Configuration Checklist **
+ 2. **Security Configuration Checklist**
 
 | Security Area                        | Planned Configuration                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
