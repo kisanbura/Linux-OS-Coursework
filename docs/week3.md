@@ -59,7 +59,9 @@ Install Network Performance tool:
 
 Install Web Server:
 **Sudo apt install nginx -y**
+
 **sudo systemctl start nginx**
+
 **sudo systemctl enable nginx** 
 ##
 
