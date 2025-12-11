@@ -41,8 +41,6 @@ Updating Packages:
 ##
 **sudo apt update**
 
-##
-
 Install CPU & RAM stress tool:
 ##
 **sudo apt install stress-ng -y**
