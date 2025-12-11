@@ -31,12 +31,14 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 
 2. Security Configuration Checklist
 
-Security Area	Planned Configuration
-SSH Hardening	Enable key-based authentication; disable password authentication; disable root login; restrict SSH access to the host-only network.
-Firewall Configuration	Configure ufw to deny all incoming traffic except SSH from my workstation IP.
-User & Privilege Management	Create a non-root administrative user; apply least-privilege principles; restrict sudo access.
-Automatic Security Updates	Enable unattended security upgrades to ensure the server remains updated.
-Mandatory Access Control	Configure AppArmor (default on Ubuntu) to enforce profiles and restrict application permissions.
-Intrusion Detection & Prevention	Install and configure Fail2Ban to monitor SSH login attempts and ban malicious IPs.
-Network Security Measures	Disable unnecessary services; review listening ports; ensure no insecure services are running.
+| Security Area                        | Planned Configuration                                                                                                               |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **SSH Hardening**                    | Enable key-based authentication; disable password authentication; disable root login; restrict SSH access to the host-only network. |
+| **Firewall Configuration**           | Configure `ufw` to deny all incoming traffic except SSH from my workstation IP.                                                     |
+| **User & Privilege Management**      | Create a non-root administrative user; apply least-privilege principles; restrict sudo access.                                      |
+| **Automatic Security Updates**       | Enable unattended security upgrades to ensure the server remains updated.                                                           |
+| **Mandatory Access Control**         | Configure AppArmor (default on Ubuntu) to enforce profiles and restrict application permissions.                                    |
+| **Intrusion Detection & Prevention** | Install and configure Fail2Ban to monitor SSH login attempts and ban malicious IPs.                                                 |
+| **Network Security Measures**        | Disable unnecessary services; review listening ports; ensure no insecure services are running.                                      |
+
    
