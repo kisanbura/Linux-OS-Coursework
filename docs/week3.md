@@ -83,9 +83,9 @@ Install Web Server:
 All performance monitoring will be performed remotely over SSH from my workstation.
 I will use the following tools and commands to measure system performance under different workloads:
 
-**CPU & Memory Monitoring**
+**CPU & Memory Monitoring:**
 
- `-top — real-time CPU and memory usage 
+ top — real-time CPU and memory usage 
 ##
 htop — improved interactive monitoring 
 ##
@@ -95,7 +95,7 @@ mpstat — per-core CPU usage breakdown
 ##
 
 
-**Disk I/O Monitoring**
+**Disk I/O Monitoring:**
 
 iostat — throughput and IOPS 
 ##
@@ -105,7 +105,7 @@ Compare before/after fio runs
 ##
 
 
-**Network Monitoring**
+**Network Monitoring:**
 
 ping — latency measurement 
 ##
@@ -114,7 +114,7 @@ iperf3 — throughput testing between server and workstation
 ss -tulpn — open ports and active connections 
 ##
 
-**Server Performance Monitoring**
+**Server Performance Monitoring:**
 
 curl — HTTP response time
 ##
