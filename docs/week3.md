@@ -73,7 +73,55 @@ Install Web Server:
 | **stress-ng** | Very high CPU usage; all cores stressed under load | High memory usage depending on selected tests | Low                                  | Low                                     |
 | **fio**       | Low CPU                                            | Low RAM                                       | Very high disk read/write operations | Low                                     |
 | **iperf3**    | Low CPU                                            | Low RAM                                       | Low disk                             | Very high network throughput            |
-| **nginx**     | Moderate CPU under high load; low when idle        | Low-medium                                    | Low                                  | Medium-high depending on request volume |
+| **nginx**     | Moderate CPU under high load; low when idle        | Low-medium                                    | Low                                  | Medium-high depending on request volume
+|
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Monitoring Strategy*
+
+All performance monitoring will be performed remotely over SSH from my workstation.
+I will use the following tools and commands to measure system performance under different workloads:
+
+CPU & Memory Monitoring
+
+top — real-time CPU and memory usage
+
+htop — improved interactive monitoring
+
+vmstat — process scheduling and memory pressure
+
+mpstat — per-core CPU usage breakdown
+
+Disk I/O Monitoring
+
+iostat — throughput and IOPS
+
+df -h — filesystem space usage
+
+Compare before/after fio runs
+
+Network Monitoring
+
+ping — latency measurement
+
+iperf3 — throughput testing between server and workstation
+
+ss -tulpn — open ports and active connections
+
+Server Performance Monitoring
+
+curl — HTTP response time
+
+ab (ApacheBench) — HTTP load generation for nginx
+
+All monitoring will be executed via SSH to simulate real remote administration in a professional environment.
+
+----------------------------------------------------------------------------------------*Reflection*
+
+In Week 3, I selected the applications required to test CPU, RAM, disk I/O, network performance, and server response times. I documented installation steps, expected performance characteristics, and my monitoring strategy. This planning phase clarified how different workloads interact with the operating system and gave me a structured approach for the detailed performance testing I will conduct in Week 6.
+
+
 
 
 
