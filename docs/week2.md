@@ -9,9 +9,13 @@ To evaluate the performance of my Ubuntu Server VM, I will use a remote monitori
 Monitoring Tools:
 
 CPU: top, htop, vmstat, mpstat
+
 Memory: free -h, vmstat
+
 Disk: iostat, df -h, and benchmarking tools such as fio
+
 Network: ping, iperf3, ss, nload
+
 Service response: curl, ab
 
 ##
