@@ -38,19 +38,23 @@ Used for throughput, bandwidth, network stress.
 **Installation Documentation**
 
 Updating Packages
-
 **sudo apt update**
+
 ##
+
 Install CPU & RAM stress tool
 **sudo apt install stress-ng -y**
+
 ##
 
 Install Disk Benchmarking tool
 **sudo apt install fio -y**
+
 ##
 
 Install Network Performance tool
 **sudo apt install iperf3 -y**
+
 ##
 
 Install Web Server
