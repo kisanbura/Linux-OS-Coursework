@@ -46,13 +46,8 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
    
 3. **Threat Model identifying**
                                                         
-| *Threat*                         | **Description**                                                         | **Mitigation Strategy**
-|----------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------
-| **Brute-force SSH Attacks**      | Attackers attempt to guess SSH passwords through repeated login attempts.| Enable key-based authentication, disable password logins, restrict SSH to the host-
-|                                  |                                                                          |     only network, and configure Fail2Ban. 
-|network, and configure Fail2Ban.  |                                                                          |
-|----------------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------             | **Privilege Escalation**         | An attacker who gains limited access may attempt to become root.         |  Use non-root administrative accounts, restrict sudo access, enforce AppArmor         |                                  |                                                                          |    profiles, and ensure secure file permissions.  
-|and ensure secure file permissions|                                                                          |
-|----------------------------------|------------------------------------------------------------------------- | -------------------------------------------------------------------                   |                                  |                                                                          |     Enable automatic security updates and regularly apply patches.
-| **Unpatched Vulnerabilities**    | Outdated packages can contain known exploits that attackers may target.  |                              
-|                                  |                                                                          |
+| Threat                        | Description                                                               | Mitigation Strategy                                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Brute-force SSH Attacks**   | Attackers attempt to guess SSH passwords through repeated login attempts. | Enable key-based authentication, disable password logins, restrict SSH to the host-only network, and configure Fail2Ban.   |
+| **Privilege Escalation**      | An attacker who gains limited access may attempt to become root.          | Use non-root administrative accounts, restrict sudo access, enforce AppArmor profiles, and ensure secure file permissions. |
+| **Unpatched Vulnerabilities** | Outdated packages can contain known exploits that attackers may target.   | Enable automatic security updates and regularly apply patches.                                                             |
