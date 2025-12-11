@@ -51,11 +51,11 @@ VirtualBox Network Setup
 
 Adapter 1 (NAT): Internet access
 <img width="1554" height="936" alt="Ss Adapter 1 Nat" src="https://github.com/user-attachments/assets/4e5b041a-0a1b-4291-a54f-f1a456a85768" />
-
+##
 
 Adapter 2 (Host-Only Adapter – vboxnet0): Secure internal SSH network
 <img width="1554" height="926" alt="ss Adapter 2 host only" src="https://github.com/user-attachments/assets/59e24172-f5cc-44e0-9f73-25d40e24d663" />
-
+##
 
 Server Network Output
 
