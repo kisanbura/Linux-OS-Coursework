@@ -85,7 +85,7 @@ I will use the following tools and commands to measure system performance under 
 
 **CPU & Memory Monitoring**
 
-top — real-time CPU and memory usage 
+#top — real-time CPU and memory usage 
 ##
 htop — improved interactive monitoring 
 ##
@@ -101,7 +101,7 @@ iostat — throughput and IOPS
 ##
 df -h — filesystem space usage 
 ##
-Compare before/after fio runs #
+Compare before/after fio runs 
 ##
 
 
