@@ -19,7 +19,9 @@ Used for throughput, bandwidth, network stress.
 
 5. Server Application → nginx
 
-Lightweight web server for latency and response tests.
+ Lightweight web server for latency and response tests.
+
+
 -------------------------------------------------------------------------------------------
 **Application Seleetion Matrix**
 
