@@ -117,7 +117,9 @@ ab (ApacheBench) — HTTP load generation for nginx
 
 All monitoring will be executed via SSH to simulate real remote administration in a professional environment.
 
-----------------------------------------------------------------------------------------*Reflection*
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Reflection*
 
 In Week 3, I selected the applications required to test CPU, RAM, disk I/O, network performance, and server response times. I documented installation steps, expected performance characteristics, and my monitoring strategy. This planning phase clarified how different workloads interact with the operating system and gave me a structured approach for the detailed performance testing I will conduct in Week 6.
 
