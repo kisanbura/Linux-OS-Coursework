@@ -65,6 +65,16 @@ Install Web Server:
 
 **sudo systemctl enable nginx** 
 ##
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Expected Resource Profiles**
+
+| Application   | Expected CPU Usage                                 | Expected Memory Usage                         | Expected Disk Usage                  | Expected Network Usage                  |
+| ------------- | -------------------------------------------------- | --------------------------------------------- | ------------------------------------ | --------------------------------------- |
+| **stress-ng** | Very high CPU usage; all cores stressed under load | High memory usage depending on selected tests | Low                                  | Low                                     |
+| **fio**       | Low CPU                                            | Low RAM                                       | Very high disk read/write operations | Low                                     |
+| **iperf3**    | Low CPU                                            | Low RAM                                       | Low disk                             | Very high network throughput            |
+| **nginx**     | Moderate CPU under high load; low when idle        | Low-medium                                    | Low                                  | Medium-high depending on request volume |
+
 
 
 
