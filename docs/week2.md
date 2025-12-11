@@ -26,3 +26,7 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 2. Bottleneck Identification: Analyse which hardware or OS components become saturated during tests.
 3. ptimisation Testing: Apply configuration optimisations and compare results.
 4. All tests will be executed remotely to simulate real-world server administration conditions.
+--------------------------------------------------------------------------------------
+
+
+2. Security Configuration Checklist 
