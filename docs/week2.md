@@ -41,4 +41,16 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 | **Intrusion Detection & Prevention** | Install and configure Fail2Ban to monitor SSH login attempts and ban malicious IPs.                                                 |
 | **Network Security Measures**        | Disable unnecessary services; review listening ports; ensure no insecure services are running.                                      |
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+3. **Threat Model identifying**
+
+   | Threat                        | Description                                                               | Mitigation Strategy                                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Brute-force SSH Attacks**   | Attackers attempt to guess SSH passwords through repeated login attempts. | Enable key-based authentication, disable password logins, restrict SSH to the host-only network, and configure Fail2Ban.   |
+| **Privilege Escalation**      | An attacker who gains limited access may attempt to become root.          | Use non-root administrative accounts, restrict sudo access, enforce AppArmor profiles, and ensure secure file permissions. |
+| **Unpatched Vulnerabilities** | Outdated packages can contain known exploits that attackers may target.   | Enable automatic security updates and regularly apply patches.                                                             |
+
+
    
