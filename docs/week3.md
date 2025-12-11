@@ -85,7 +85,7 @@ I will use the following tools and commands to measure system performance under 
 
 **CPU & Memory Monitoring**
 
- top — real-time CPU and memory usage 
+ `-top — real-time CPU and memory usage 
 ##
 htop — improved interactive monitoring 
 ##
