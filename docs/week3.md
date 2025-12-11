@@ -20,3 +20,12 @@ Used for throughput, bandwidth, network stress.
 5. Server Application → nginx
 
 Lightweight web server for latency and response tests.
+-------------------------------------------------------------------------------------------
+**Application Seleetion Matrix**
+
+| Application   | Workload Type                 | Reason for Selection                                                                              |
+| ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| **stress-ng** | CPU-intensive / RAM-intensive | Provides configurable CPU and memory stress for reproducible load conditions.                     |
+| **fio**       | Disk I/O-intensive            | Industry-standard tool for benchmarking sequential and random disk read/write performance.        |
+| **iperf3**    | Network-intensive             | Measures bandwidth, throughput, and latency between server and workstation.                       |
+| **nginx**     | Server workload               | Lightweight web server suitable for performance analysis, benchmarking, and HTTP request testing. |
