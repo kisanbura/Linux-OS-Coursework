@@ -3,7 +3,7 @@ Week 3 - **Select Applications for Different Workloads**
 ##
 1. CPU-Intensive → stress-ng
 
-Used to stress CPU(s).
+Used to stress test CPU(s).
 
 2. RAM-Intensive → stress-ng with memory options
 
