@@ -1,5 +1,5 @@
 (((ADD COMMAND FIGURATIONS SHOWING WHICH COMMANDS TO USE )(((
-
+MORE DETAIL EXPLAINAITIONS
 
 # Week 2 - Security Planning and Testing Methodology 
 
