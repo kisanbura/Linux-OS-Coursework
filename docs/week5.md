@@ -1,5 +1,11 @@
 # Week 5 – Advanced Security and Monitoring Infrastructure
 
+ADD MORE DETAILS MORE BETTER EXPLAINATIONS   
+BETTER REFLECTION  
+DESIGN IT BETTER)
+
+
+
 ## Overview
 This week focused on implementing advanced security controls and building automation to verify security posture and monitor system performance remotely. The server is still administered headlessly using SSH from the workstation, following the coursework’s remote administration constraint.
 
