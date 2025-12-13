@@ -110,6 +110,7 @@ and allow SSH access only from the authorised workstation.
 
 
 checks firewall stauts
+##
 
 got ip from ipconfig 
 <img width="1466" height="476" alt="ipconfig get ip from powershell" src="https://github.com/user-attachments/assets/12e585d0-d91b-43fb-9fc7-f6c83cbe0ff2" />
