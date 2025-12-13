@@ -3,7 +3,7 @@
 Student ID: BUR22529747 Kisan Bura 
 Module: Operating Systems
 Instructor: Dr Shabih Fatima
-Duration: 7 Weeks  
+Duration: 7 Weeks
 
 ---
 
