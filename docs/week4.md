@@ -19,18 +19,24 @@ the server.
 
 ##
 <img width="1310" height="880" alt="public key ss" src="https://github.com/user-attachments/assets/7738e7c8-557f-4a86-8bc8-b57387edc781" />
-##
+
 The `ssh-keygen` command was executed on the workstation using PowerShell to generate 
 an Ed25519 key pair. The private key remains on the workstation, while the public key 
 is installed on the server.
+
+
 ##
 <img width="1390" height="626" alt="direct login to powershell no password required" src="https://github.com/user-attachments/assets/1e5b7961-4553-457a-a717-c8b783eae65f" />
+
 
 This screenshot demonstrates a successful SSH connection to the server without being 
 prompted for a password, confirming that key-based authentication is working correctly.
 
 
+
 <img width="1376" height="1546" alt="public key output SS" src="https://github.com/user-attachments/assets/c7b253b2-ae1d-4a6b-be95-7b2fe776fa25" />
+
+This shows that a key was added.
 
 ----------------------------------------------------------------------------------------
 ## SSH Hardening
