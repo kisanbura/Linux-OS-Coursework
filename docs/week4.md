@@ -101,11 +101,13 @@ commands with elevated privileges using `sudo`.
 A host-based firewall was configured using UFW to restrict incoming network traffic 
 and allow SSH access only from the authorised workstation.
 
-<img width="1420" height="996" alt="firewall activiation" src="https://github.com/user-attachments/assets/091cfdb3-44bd-4458-9e6a-a21579409eae" />
-##
+<img width="1386" height="854" alt="firewall activation" src="https://github.com/user-attachments/assets/0e6cbf65-6812-40e0-a877-5c4de54f3d35" />
 
 
-<img width="1326" height="364" alt="sudo ufw status verbose" src="https://github.com/user-attachments/assets/1934c7c3-d37a-4e3e-a10a-6c843779710e" />
+
+<img width="1258" height="426" alt="sudo ufw status verbose" src="https://github.com/user-attachments/assets/c6e6cb77-ec06-48d6-967a-7c8ef17604b6" />
+
+
 
 checks firewall stauts
 
