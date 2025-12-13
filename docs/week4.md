@@ -1,5 +1,5 @@
 # Week 4 - **Initial System Configuratoin & Security Implmentation**
-##
+##  ADD MORE DETAIL EXPLAINATIONS
 
  ## Overview
 This week focused on implementing foundational security controls on the Ubuntu Server. 
