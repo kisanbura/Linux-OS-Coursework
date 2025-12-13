@@ -103,7 +103,7 @@ and allow SSH access only from the authorised workstation.
 
 <img width="1386" height="854" alt="firewall activation" src="https://github.com/user-attachments/assets/0e6cbf65-6812-40e0-a877-5c4de54f3d35" />
 
-
+##
 
 <img width="1258" height="426" alt="sudo ufw status verbose" src="https://github.com/user-attachments/assets/c6e6cb77-ec06-48d6-967a-7c8ef17604b6" />
 
