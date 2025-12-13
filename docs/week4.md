@@ -1,6 +1,6 @@
 # Week 4 - **Initial System Configuratoin & Security Implmentation**
 ##  ADD MORE DETAIL EXPLAINATIONS
-
+ADD REFLECTION
  ## Overview
 This week focused on implementing foundational security controls on the Ubuntu Server. 
 All configuration tasks were performed remotely via SSH from the workstation, in line 
