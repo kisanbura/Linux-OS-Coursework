@@ -1,4 +1,4 @@
-Week 1 — System Planning & Initial Setup
+# Week 1 — System Planning & Initial Setup
 ##
 1. System Architecture Diagram
 
