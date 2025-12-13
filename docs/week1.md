@@ -4,7 +4,7 @@
 
 <img width="1766" height="742" alt="architecture diagram screenshoit" src="https://github.com/user-attachments/assets/b4afb5d7-08b4-402f-ad3e-88cc3721f4da" />
 
-
+EXPLAIN WHAT EACH COMMAND DOES AND SHOW MORE DETAIL
 
 ##
 
