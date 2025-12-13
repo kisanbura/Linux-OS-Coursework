@@ -46,7 +46,6 @@ installing unattended upgrades
 
 
 
-<img width="1314" height="218" alt="sudo apt install unattended upgrades installing unattended upgrades" src="https://github.com/user-attachments/assets/2f4d53e2-81f8-410a-af06-8c699c3b699e" />
 
 ##
 
