@@ -48,8 +48,8 @@ authentication methods and restricting privileged access.
 <img width="1430" height="1360" alt="before changing sshd config " src="https://github.com/user-attachments/assets/31649e3b-6e6a-42e6-acd6-06420e6382c1" />
 
 After editing SSh config file
+<img width="1108" height="370" alt="week 4 sshconfig" src="https://github.com/user-attachments/assets/f01672b3-9453-4a97-a70f-565fc4a6c698" />
 
-<img width="1420" height="1370" alt="after editing ssh config" src="https://github.com/user-attachments/assets/dc8a8974-2fbc-4972-ad33-748f248351b1" />
 
 #
 The SSH configuration file (`/etc/ssh/sshd_config`) was modified to disable password 
@@ -58,13 +58,60 @@ These changes enforce secure access and follow best security practices.
 
 
 ## 
-<img width="1398" height="320" alt="proof of disable passwordlogin permit login inside ssh" src="https://github.com/user-attachments/assets/21baf97e-8749-4ade-92e9-bd1d7cd960bc" />
+<img width="1404" height="228" alt="week 4 verifying active ssh " src="https://github.com/user-attachments/assets/f7165850-02a3-475d-8eea-22e922508029" />
 
 Key changes included:
 - `PasswordAuthentication no`
 - `PermitRootLogin no`
 - `PubkeyAuthentication yes`
 
+##
+## SSH Key troubleshooting
+### SSH Key Authentication Troubleshooting
+
+After disabling password-based authentication, SSH access initially failed with a `Permission denied (publickey)` error. This behaviour was expected, as SSH becomes strictly dependent on valid key-based authentication once passwords are disabled.
+
+Verbose SSH debugging (`ssh -v`) was used from the workstation to identify which public key was being offered during authentication. The server logs confirmed that the offered key did not match the authorised public key stored on the server.
+
+The issue was resolved by reinstalling the correct workstation public key into the server’s `authorized_keys` file and enforcing SSH-compliant file ownership and permissions. Following this correction, key-based SSH access was restored successfully without requiring a password.
+
+##
+
+<img width="876" height="38" alt="week 4 permission" src="https://github.com/user-attachments/assets/137981f7-5b5e-4cc7-907a-a1bb1e3b685a" />
+
+##
+<img width="1066" height="82" alt="week 4 permission denied" src="https://github.com/user-attachments/assets/e443f78c-29dd-4a6d-97b8-c997ada6c481" />
+
+permission denied shows issues encountered justies troubleshooting steps
+
+##
+<img width="1232" height="138" alt="week 4 ssh -vking" src="https://github.com/user-attachments/assets/80fbc669-9d5b-4b97-87fd-b97ef533e510" />
+##
+
+<img width="1396" height="74" alt="week 4 offering public kety" src="https://github.com/user-attachments/assets/131955c2-18e6-49e8-b844-5b58d9c9d53b" />
+shows analytical troubleshooting
+
+
+##
+
+### SSH Key Permissions Verification
+
+After correcting the authorised public key, SSH file permissions and ownership were verified to ensure compliance with OpenSSH security requirements. The `.ssh` directory was restricted to the user only, preventing other users from reading or modifying SSH configuration files. The `authorized_keys` file was configured with strict permissions to ensure that only the account owner can modify authorised public keys.
+
+This step was necessary because OpenSSH will refuse key-based authentication if file permissions are overly permissive, as a protection against unauthorised access and privilege escalation.
+
+<img width="1104" height="150" alt="week 4 troubleshooting ls ocmmands" src="https://github.com/user-attachments/assets/39cc73b2-a913-44cd-88d3-25d7da7cc33a" />
+
+
+
+<img width="1130" height="320" alt="week 4 troubleshooting 4 " src="https://github.com/user-attachments/assets/e75af53d-1026-4cff-8f77-a35686311ff4" />
+
+
+
+
+##
+After fix succesful login without password
+<img width="1336" height="770" alt="week 4 succesful loginwithout password" src="https://github.com/user-attachments/assets/70f70900-16e1-4e8e-af78-830e3538f56d" />
 
 ----------------------------------------------------------------------------------------
 
