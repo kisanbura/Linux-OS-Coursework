@@ -250,7 +250,7 @@ adding vm.swapiness=10 conf
 confirms optimisation is active systcl
 
 ---------------------------------------------------------------------------------------
-## Retesing After OPtimisation - Memory Teste
+## Retesing After OPtimisation - Memory Testing
 
 Commands Used
 stress-ng --vm 1 --vm-bytes 75% --timeout 60 --metrics-brief
@@ -311,6 +311,10 @@ Trade-off 2: Virtualisation vs Hardware Control
 CPU frequency scaling could not be modified within the virtual machine due to hypervisor constraints, highlighting a trade-off between virtualisation flexibility and direct hardware-level optimisation.
 
 Trade-off 3: Disk Throughput vs Latency
+
+### Trade-off: Performance Impact vs Security and Audit Logging
+
+Security auditing and monitoring introduce measurable system overhead through increased disk I/O, CPU usage, and memory consumption. Enabling process accounting and frequent monitoring improves visibility and forensic capability but can slightly reduce performance under load. This trade-off was evaluated during performance testing, where the impact of logging was observed to be minimal relative to the security benefits. As the system operates within a virtualised environment, prioritising auditability over marginal performance gains was considered appropriate.
 
 Random disk writes improved throughput realism but increased latency, demonstrating the balance between I/O performance and responsiveness.
 ----------------------------------------------------------------------------------------
