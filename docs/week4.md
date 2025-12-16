@@ -113,6 +113,10 @@ This step was necessary because OpenSSH will refuse key-based authentication if 
 After fix succesful login without password
 <img width="1336" height="770" alt="week 4 succesful loginwithout password" src="https://github.com/user-attachments/assets/70f70900-16e1-4e8e-af78-830e3538f56d" />
 
+### Trade-off: Security vs Usability in SSH Authentication
+
+A key trade-off identified during SSH hardening was between security and usability. Disabling password-based authentication significantly reduces the risk of brute-force attacks and credential compromise; however, it also increases the risk of administrator lockout if SSH keys are misconfigured. This trade-off was accepted because key-based authentication provides stronger cryptographic security and aligns with industry best practices for server administration. The risk was mitigated by retaining console access via the virtual machine and validating configuration changes using `sshd -T` before closing active sessions.
+
 ----------------------------------------------------------------------------------------
 
 ## Non-Root Administrative User
