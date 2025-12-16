@@ -169,6 +169,14 @@ All unnecessary services were avoided to minimise the system’s attack surface.
 ## Remaining Risk Assessment
 
 Despite significant hardening, some residual risks remain. SSH access, although restricted and key-based, remains an exposed service. Additionally, as the system operates within a virtualised environment, its security is partially dependent on the host operating system and hypervisor, which are outside the control of the guest OS. 
-----------------------------------------------------------------------------------------## Final Evaluation and Reflection
+----------------------------------------------------------------------------------------
+
+##
+
+### Trade-off: Automated Security Scoring vs Human Risk Assessment
+
+Automated auditing tools such as Lynis provide structured security assessments and quantitative hardening scores; however, they do not fully capture contextual risk or the operational suitability of every recommendation. This was evident when selected remediations did not significantly increase the Lynis score despite improving auditability and compliance. This trade-off highlights the limitation of relying solely on automated metrics and reinforces the importance of informed human judgement when evaluating operating system security.
+
+## Final Evaluation and Reflection
 
 This week demonstrated a complete security lifecycle: baseline auditing, review of findings, selective remediation, and validation. The use of Lynis, nmap, firewall verification, and access control checks illustrates a balanced approach to security, performance, and manageability. The results highlight the operating system as an integrated system shaped by configuration choices, security requirements, and virtualisation constraints, reflecting professional system administration practices.
