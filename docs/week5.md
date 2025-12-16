@@ -179,6 +179,11 @@ output of monitoring script
 
 ---------------------------------------------------------------------------------------
 
+##
+### Trade-off: Security Hardening vs Administrative Overhead
+
+Implementing additional security controls such as Fail2ban, automatic security updates, and baseline verification scripts improves system resilience against attacks but increases administrative complexity and monitoring overhead. Each control introduces configuration files, logs, and potential false positives that require maintenance. This trade-off was considered acceptable because the server is intended to simulate a production-like environment where proactive security monitoring outweighs the cost of additional administration. Automation scripts were used to reduce manual overhead and improve consistency.
+--------------------------------------------------------------------------------------------------------------------------------------
 ## Reflection
 Week 5 focused on strengthening system security and improving automation. AppArmor enforced Mandatory Access Control, unattended upgrades reduced patching delays, and Fail2Ban protected against brute-force SSH attacks. Creating automated scripts for security verification and remote monitoring improved reliability and demonstrated professional command-line and system administration practices.
 
