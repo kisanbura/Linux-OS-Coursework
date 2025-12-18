@@ -19,8 +19,10 @@ The `aa-status` command displays whether AppArmor is active, how many profiles a
 ### Why this matters?
 AppArmor limits what applications can access even if they are compromised, reducing the impact of potential exploits.
 
-<img width="1160" height="194" alt="sudo aa status checking aa status" src="https://github.com/user-attachments/assets/577367ef-89bd-4e69-858f-ed80f0084de2" />
 ##
+
+<img width="1160" height="194" alt="sudo aa status checking aa status" src="https://github.com/user-attachments/assets/577367ef-89bd-4e69-858f-ed80f0084de2" />
+
 
 <img width="1420" height="596" alt="sudo aa status output" src="https://github.com/user-attachments/assets/27de31ad-0cc5-47c7-b660-9a00666daf33" />
 
