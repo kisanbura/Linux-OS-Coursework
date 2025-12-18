@@ -315,7 +315,7 @@ Security auditing and monitoring introduce measurable system overhead through in
 
 Random disk writes improved throughput realism but increased latency, demonstrating the balance between I/O performance and responsiveness.
 
-#These results demonstrate how operating system performance is shaped by scheduler behaviour, memory management policies, and virtualisation constraints rather than application behaviour alone.
+**These results demonstrate how operating system performance is shaped by scheduler behaviour, memory management policies, and virtualisation constraints rather than application behaviour alone.**
 ----------------------------------------------------------------------------------------
 ## Reflection
 
