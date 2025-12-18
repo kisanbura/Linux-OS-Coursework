@@ -181,12 +181,12 @@ and allow SSH access only from the authorised workstation.
 <img width="1466" height="476" alt="ipconfig get ip from powershell" src="https://github.com/user-attachments/assets/12e585d0-d91b-43fb-9fc7-f6c83cbe0ff2" />
 
 
-The firewall was configured to deny all incoming connections by default and allow 
+- The firewall was configured to deny all incoming connections by default and allow 
 outgoing traffic. SSH access was explicitly permitted only from the workstation’s 
 host-only IP address, significantly reducing exposure to unauthorised access.
 
 
-### Trade-off: Network Security vs Accessibility
+## Trade-off: Network Security vs Accessibility
 
 Restricting SSH access to a single trusted workstation IP significantly reduces the network attack surface but limits flexibility when administrative access is required from other locations. This trade-off prioritises security over convenience, reflecting real-world server deployment practices where access is tightly controlled. The limitation was accepted because the system operates within an isolated VirtualBox network, and administrative access requirements are predictable.
 
