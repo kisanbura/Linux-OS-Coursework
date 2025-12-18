@@ -240,6 +240,8 @@ What the commands do ?
 - Running sudo nano etc conf
 ##
 
+<img width="1428" height="1674" alt="week 6 swapiness image 2" src="https://github.com/user-attachments/assets/5bb6eeb6-ee40-4fa1-b7e5-db5a067ab981" />
+##
 
 <img width="1384" height="336" alt="Week 6 swappiness image" src="https://github.com/user-attachments/assets/4cbe8435-af13-461a-8464-25cf7f5cb359" />
 
