@@ -200,7 +200,7 @@ iperf3 -c measures TCP throughput between client and server
 
 # Analysis
 
-The iperf3 test showed high and stable throughput, indicating that the Linux networking stack and virtual network interface handle data transfer efficiently under load. As the test was performed over the loopback interface (127.0.0.1), the results reflect operating system–level network performance rather than physical network conditions. This approach ensured repeatable measurements but does not account for real-world latency or external network congestion, which would be factors in a production environment.
+The iperf3 test showed high and stable throughput, indicating that the Linux networking stack and virtual network interface handle data transfer efficiently under load. As the test was performed over the loopback interface (127.0.0.1), the results reflect operating system–level network performance rather than physical network conditions. This approach ensured repeatable measurements but does not account for real-world latency or external network congestion, which would be factors in a production environment. To simulate real-world conditions, future testing could be conducted between the workstation and server over the host-only network instead of the loopback interface.
 
 ----------------------------------------------------------------------------------------
 
