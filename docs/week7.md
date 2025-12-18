@@ -166,11 +166,11 @@ After applying selected improvements, Lynis was re-run to reassess the system. T
 
 ## Network Security Assessment (nmap)
 
-A network security assessment was performed using nmap to identify exposed services and validate firewall effectiveness.
+A network security assessment was conducted to identify exposed services and evaluate firewall effectiveness.
 
 **Command Used**
-- sudo aa-status
-- sudo nmap -sS 192.68.56.3   
+- sudo aa-status --> verify that (MAC) was enabled on the system
+- sudo nmap -sS 192.68.56.3 --> A TCP SYN scan was performed using nmap:
 
 ##
 
@@ -181,8 +181,10 @@ A network security assessment was performed using nmap to identify exposed servi
   ##
   <img width="1352" height="394" alt="sudo nmap -ss performs a tcp syn scan week 7" src="https://github.com/user-attachments/assets/6f66e6b9-766c-4c4a-ae5d-46eab9028da9" />
 
-  
-Nmap scanning confirmed that only the SSH service was exposed on the server. This validates firewall effectiveness and minimises the network attack surface.
+- A TCP SYN scan was performed using nmap 
+
+##
+The scan revealed that only the SSH service was exposed, indicating that the firewall was correctly configured and the network attack surface was minimised.
 
 ----------------------------------------------------------------------------------------
 ## Service Inventory and Justification
