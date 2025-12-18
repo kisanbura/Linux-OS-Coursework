@@ -53,8 +53,8 @@ Following the baseline audit, the Lynis log file was reviewed to identify securi
 
 ##
 
-**Selective Hardening Decisions(Post-Audit)- 
-Rather than applying all Lynis recommendations indiscriminately, hardening actions were prioritised based on security impact, system stability, and relevance to the deployment context. Existing SSH hardening, firewall restrictions, and intrusion prevention mechanisms already mitigated the highest-risk findings. Additional recommendations were reviewed but deferred where the security benefit was marginal or where changes could negatively impact system usability or performance. This selective approach reflects professional security management practices rather than checklist-driven hardening.**
+Selective Hardening Decisions(Post-Audit)- 
+**Rather than applying all Lynis recommendations indiscriminately, hardening actions were prioritised based on security impact, system stability, and relevance to the deployment context. Existing SSH hardening, firewall restrictions, and intrusion prevention mechanisms already mitigated the highest-risk findings. Additional recommendations were reviewed but deferred where the security benefit was marginal or where changes could negatively impact system usability or performance. This selective approach reflects professional security management practices rather than checklist-driven hardening.**
 ----------------------------------------------------------------------------------------
 ## Selected Secuirty Improvements and Validation
 
