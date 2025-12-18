@@ -55,3 +55,9 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 | **Unpatched Vulnerabilities** | Outdated packages can contain known exploits that attackers may target.   | Enable automatic security updates and regularly apply patches.                                                             |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 These security and performance plans directly informed later implementation decisions in Weeks 4–7. For example, the threat model guided SSH hardening and firewall restrictions, while the performance methodology was applied during structured testing in Week 6.
+
+-----------------------------------------------------------------------------------------
+### Reflection
+
+Week 2 focused on planning rather than implementation, which highlighted the importance of designing security and performance strategies before making system changes. Developing a security checklist and threat model helped clarify how different attack vectors map to specific operating system controls such as SSH hardening, firewalls, and automatic updates. Creating a structured performance testing methodology ensured that later testing would be reproducible and meaningful rather than ad hoc. This planning phase reinforced the idea that effective system administration relies on preparation and risk assessment as much as technical execution.
+
