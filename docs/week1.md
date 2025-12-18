@@ -1,19 +1,19 @@
-# Week 1 — System Planning & Initial Setup
+## Week 1 — System Planning & Initial Setup
 ##
-1. System Architecture Diagram
+# 1. System Architecture Diagram
 
 <img width="1766" height="742" alt="architecture diagram screenshoit" src="https://github.com/user-attachments/assets/b4afb5d7-08b4-402f-ad3e-88cc3721f4da" />
 
-EXPLAIN WHAT EACH COMMAND DOES AND SHOW MORE DETAIL
+
 
 ##
 
-2. Distribution Selection Justification
+# 2. Distribution Selection Justification
 
 Chosen server distribution: Ubuntu Server LTS
 Alternative considered: Debian
 
-Justification:
+# Justification:
 
 Ubuntu offers excellent documentation and strong community support.
 Easy package management with apt.
@@ -28,7 +28,7 @@ Ubuntu is better for beginners and aligns with industry practice.
 
 -----------------------------------------------------------------------------------------
 
-3. Workstation Configuration Decision
+# 3. Workstation Configuration Decision
 
 Chosen workstation option: Option B — Host Machine
 
@@ -46,7 +46,7 @@ Matches required “dual-system” architecture.
 
 
 -----------------------------------------------------------------------------------------
-4. Network Configuration Documentation
+# 4. Network Configuration Documentation
 VirtualBox Network Setup
 
 Adapter 1 (NAT): Internet access
@@ -68,18 +68,22 @@ enp0s8 = 192.168.56.3/24 (Host-Only Network)
 
 -----------------------------------------------------------------------------------------
 
-5. System Specifications (CLI Evidence)
+5. **System Specifications**
 Kernel Info (uname -a)
+
+- This output confirms the kernel version and architecture, which is relevant for compatibility with performance and security tools.
 
 <img width="2302" height="222" alt="uname  -a ss" src="https://github.com/user-attachments/assets/e8b12e47-5aae-4e4b-a0c0-fac5a04e3f06" />
 
 -------------------------------------------------------------------------------------------------------------
 Memory Info (free -h)
+- This shows available and used memory, providing a baseline for later performance testing.
 
 <img width="1846" height="218" alt="free -h ss" src="https://github.com/user-attachments/assets/e5429694-fb81-49ad-a9e4-66e39741a9cf" />
 
 --------------------------------------------------------------------------------------------------------------------------------------
 Disk Info (df -h)
+- This shows available and used memory, providing a baseline for later performance testing.
 
 <img width="1496" height="404" alt="df -h ss" src="https://github.com/user-attachments/assets/b35e0b3a-51fe-4b8e-b447-97d5181a63fc" />
 
@@ -95,6 +99,6 @@ Release Info (lsb_release -a)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-6. Reflection
+6. ## Reflection
 
 This week I set up my Ubuntu Server VM and successfully connected to it using SSH from my host computer. I configured VirtualBox with both NAT and a Host-Only adapter and verified that the server received the correct IP address. I also collected system information using various Linux commands and created an architecture diagram. I initially encountered an issue where the host-only adapter was disabled and the VM did not receive an IP address, but fixing the adapter settings resolved the problem. Through this process I gained confidence in VirtualBox networking and remote administration.
