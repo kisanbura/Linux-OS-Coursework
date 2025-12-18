@@ -240,7 +240,8 @@ What the commands do ?
 ##
 
 
-<img width="1384" height="336" alt="Week 6 swappiness image" src="https://github.com/user-attachments/assets/647fb394-b6a8-40de-bcd6-f60c4b1d97b6" />
+<img width="1384" height="336" alt="Week 6 swappiness image" src="https://github.com/user-attachments/assets/4cbe8435-af13-461a-8464-25cf7f5cb359" />
+
 
 
 - Adding vm.swappiness=10 conf
