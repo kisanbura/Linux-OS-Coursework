@@ -170,6 +170,7 @@ A network security assessment was performed using nmap to identify exposed servi
 
 **Command Used**
 - sudo aa-status
+- sudo nmap -sS 192.68.56.3   
 
 ##
 
@@ -177,6 +178,10 @@ A network security assessment was performed using nmap to identify exposed servi
 
 - Checks if apparmor and mac are active
 
+  ##
+  <img width="1352" height="394" alt="sudo nmap -ss performs a tcp syn scan week 7" src="https://github.com/user-attachments/assets/6f66e6b9-766c-4c4a-ae5d-46eab9028da9" />
+
+  
 Nmap scanning confirmed that only the SSH service was exposed on the server. This validates firewall effectiveness and minimises the network attack surface.
 
 ----------------------------------------------------------------------------------------
