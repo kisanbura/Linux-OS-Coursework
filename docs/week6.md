@@ -27,10 +27,10 @@ This approach ensures results are reproducible and supports quantitative analysi
 
 What the commands do?
 
-- uptime - reports system load averages
-- free -h - shows memory usage in human-readable format
+- uptime  reports system load averages
+- free -h  shows memory usage in human-readable format
 - df -h / shows memory usage in human-readable format
-- iostat - reports CPU and disk I/O activity
+- iostat reports CPU and disk I/O activity
 
 ##
 
