@@ -1,8 +1,6 @@
 # Week 3 - **Select Applications for Different Workloads** 
 
-(ADDDD COMMANDS INSTALLING THESE THINGS IN THE MACHINE AND COMMANDS TO USE LATER)
-MORE DETAIL EXPLAINATIONS
-ADD REFLECTIONS
+
 ##
 1. CPU-Intensive → stress-ng
 
