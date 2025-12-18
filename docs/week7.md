@@ -203,7 +203,8 @@ A review of running services confirmed that only essential services were active.
 ----------------------------------------------------------------------------------------
 ## Remaining Risk Assessment
 
-Despite significant hardening, some residual risks remain. SSH access, although restricted and key-based, remains an exposed service. Additionally, as the system operates within a virtualised environment, its security is partially dependent on the host operating system and hypervisor, which are outside the control of the guest OS. 
+Despite significant hardening, some residual risks remain. SSH access, although restricted and key-based, remains an exposed service. Additionally, as the system operates within a virtualised environment, its security is partially dependent on the host operating system and hypervisor, which are outside the control of the guest OS.
+
 ----------------------------------------------------------------------------------------
 
 
