@@ -54,7 +54,10 @@ VirtualBox Network Setup
 
 Adapter 1 (NAT): Internet access
 <img width="1554" height="936" alt="Ss Adapter 1 Nat" src="https://github.com/user-attachments/assets/4e5b041a-0a1b-4291-a54f-f1a456a85768" />
+
+- The NAT adapter provides controlled internet access for updates and package installation, while the host-only adapter isolates administrative traffic
 ##
+
 
 Adapter 2 (Host-Only Adapter – vboxnet0): Secure internal SSH network
 <img width="1554" height="926" alt="ss Adapter 2 host only" src="https://github.com/user-attachments/assets/59e24172-f5cc-44e0-9f73-25d40e24d663" />
@@ -64,7 +67,9 @@ Server Network Output
 
 From ip addr command:
 
-enp0s8 = 192.168.56.3/24 (Host-Only Network)
+enp0s8 = 192.168.56.3/24 (Host-Only Networkk
+
+- This confirms that SSH traffic is restricted to the host-only network and not exposed via NAT.
 
 <img width="1418" height="1014" alt="ip addr screenshot" src="https://github.com/user-attachments/assets/a292e48d-4465-46cc-878d-3fbcef892265" />
 
@@ -86,8 +91,8 @@ Memory Info (free -h)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 Disk Info (df -h)
-- This shows available and used memory, providing a baseline for later performance testing.
-
+- This shows disk usage and available storage, providing a baseline for later I/O performance testing.
+- 
 <img width="1496" height="404" alt="df -h ss" src="https://github.com/user-attachments/assets/b35e0b3a-51fe-4b8e-b447-97d5181a63fc" />
 
 
@@ -104,4 +109,4 @@ Release Info (lsb_release -a)
 
 6. ## Reflection
 
-This week I set up my Ubuntu Server VM and successfully connected to it using SSH from my host computer. I configured VirtualBox with both NAT and a Host-Only adapter and verified that the server received the correct IP address. I also collected system information using various Linux commands and created an architecture diagram. I initially encountered an issue where the host-only adapter was disabled and the VM did not receive an IP address, but fixing the adapter settings resolved the problem. Through this process I gained confidence in VirtualBox networking and remote administration.
+This week I set up my Ubuntu Server VM and successfully connected to it using SSH from my host computer. I configured VirtualBox with both NAT and a Host-Only adapter and verified that the server received the correct IP address. I also collected system information using various Linux commands and created an architecture diagram. I initially encountered an issue where the host-only adapter was disabled and the VM did not receive an IP address, but fixing the adapter settings resolved the problem. Through this process I gained confidence in VirtualBox networking and remote administration. This foundation will support later security hardening and performance testing carried out in subsequent weeks.
