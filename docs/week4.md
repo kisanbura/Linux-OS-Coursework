@@ -49,6 +49,8 @@ authentication methods and restricting privileged access.
 
 After editing SSh config file
 <img width="1108" height="370" alt="week 4 sshconfig" src="https://github.com/user-attachments/assets/f01672b3-9453-4a97-a70f-565fc4a6c698" />
+##
+Commented configuration lines were explicitly overridden with active directives to ensure SSH daemon behaviour matched intended security policy. Configuration changes were verified using systemctl reload ssh and functional testing via SSH login.
 
 
 #
