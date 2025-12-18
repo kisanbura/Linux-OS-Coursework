@@ -182,13 +182,13 @@ Running services were reviewed to confirm that only essential services were enab
 
 # Justified Services:
 
-- ssh – secure remote administration
+- **ssh** – secure remote administration
 
-- ufw – firewall enforcement
+- **ufw** – firewall enforcement
 
-- fail2ban – intrusion detection and prevention
+- **fail2ban** – intrusion detection and prevention
 
-- apparmor – mandatory access control
+- **apparmor** – mandatory access control
 
 A review of running services confirmed that only essential services were active. No unnecessary network services were identified, reducing potential attack vectors.
 
@@ -209,3 +209,7 @@ Automated auditing tools such as Lynis provide structured security assessments a
 ## Final Evaluation and Reflection
 
 This week demonstrated a complete security lifecycle: baseline auditing, review of findings, selective remediation, and validation. The use of Lynis, nmap, firewall verification, and access control checks illustrates a balanced approach to security, performance, and manageability. The results highlight the operating system as an integrated system shaped by configuration choices, security requirements, and virtualisation constraints, reflecting professional system administration practices.
+
+Overall, this project reinforced that effective operating system security is achieved through continuous assessment, informed trade-offs, and configuration discipline rather than reliance on any single tool or metric.
+
+
