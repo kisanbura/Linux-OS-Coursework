@@ -52,7 +52,7 @@ authentication methods and restricting privileged access.
 ##
 
 
-##After editing SSh config file
+## After editing SSH config file
 
 ##
 <img width="1108" height="370" alt="week 4 sshconfig" src="https://github.com/user-attachments/assets/f01672b3-9453-4a97-a70f-565fc4a6c698" />
