@@ -197,12 +197,6 @@ iperff3 -s
 
 iperf3 -c
 
-##
-What the commands do
-
-iperf3 -s starts a network test server
-
-iperf3 -c measures TCP throughput between client and server
 
 ----------------------------------------------------------------------------------------
 
@@ -312,7 +306,7 @@ CPU frequency scaling could not be modified within the virtual machine due to hy
 
 Trade-off 3: Disk Throughput vs Latency
 
-### Trade-off: Performance Impact vs Security and Audit Logging
+ Trade-off 4 : Performance Impact vs Security and Audit Logging
 
 Security auditing and monitoring introduce measurable system overhead through increased disk I/O, CPU usage, and memory consumption. Enabling process accounting and frequent monitoring improves visibility and forensic capability but can slightly reduce performance under load. This trade-off was evaluated during performance testing, where the impact of logging was observed to be minimal relative to the security benefits. As the system operates within a virtualised environment, prioritising auditability over marginal performance gains was considered appropriate.
 
