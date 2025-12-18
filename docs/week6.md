@@ -9,7 +9,7 @@ All tests were executed via SSH from the workstation, maintaining headless serve
 -------------------------------------------------------------------------------------------
 
 ## Testing Methodology
-#Approach
+# Approach
 
 Performance evaluation followed a structured methodology:
 1.Measure baseline performance under idle conditions
@@ -23,7 +23,7 @@ This approach ensures results are reproducible and supports quantitative analysi
 
 -----------------------------------------------------------------------------------------
 # Baseline Performance measuremetns (idle system)
-Commands used
+**Commands used**
 
 What the commands do?
 
@@ -64,7 +64,7 @@ Baseline results showed low load averages, high available memory, and minimal di
 
 ##CPU Performance Testing
 
-# Commands Used
+**Commands Used**
 
 - stress-ng --cpu 2 --timeout 60 --metrics-brief
 - uptime
@@ -113,7 +113,7 @@ During CPU stress testing, load averages increased significantly relative to bas
 ----------------------------------------------------------------------------------------
 ## Memory Perforamnce Testing
 
-# Commands Used
+**Commands Used**
 - stress-ng --vm 1 --vm-bytes 75% --timeout 60 --metrics-brief
 - free -h
 
@@ -157,7 +157,7 @@ What the commands do?
 ## 
 <img width="2174" height="1172" alt="fio  monitoring disk io perforamance" src="https://github.com/user-attachments/assets/b1684253-42cd-43ed-883f-04f6261b05f7" />
 
-fio monitoring disk io performance
+- fio monitoring disk io performance
 
 <img width="2022" height="194" alt="fio monitoring disk performance 2" src="https://github.com/user-attachments/assets/b682c736-82c8-43bc-a8cb-3488d9db6af3" />
 
@@ -176,7 +176,7 @@ Disk I/O testing revealed increased write latency during random operations, refl
 
 ## Network Performance Testing
 
-# Commands Used
+ **Commands Used**
 iperf3 -s
 iperf3 -c 127.0.0.1
 
@@ -190,7 +190,7 @@ iperf3 -c measures TCP throughput between client and server
 ##
 <img width="1664" height="808" alt="iperf3 -s testing networking performance 2" src="https://github.com/user-attachments/assets/19ddcaca-e939-4a96-9011-43622e2ec859" />
 
-- output of iperff3 -s 
+- output of iperf3 -s 
 
 ##
 <img width="1532" height="750" alt="iperf3 -c 127 0 0 1" src="https://github.com/user-attachments/assets/b10d8e96-9a08-4ed9-b061-7ea399e9ed0f" />
@@ -237,7 +237,7 @@ What the commands do ?
 - Running sudo nano etc conf
 ##
 <img width="1416" height="1448" alt="vm swapiness=10 conf" src="https://github.com/user-attachments/assets/e02fd500-d0e7-4e5e-9ce7-36a5b4938243" />
-- Adding vm.swapiness=10 conf
+- Adding vm.swappiness=10 conf
 
 
 <img width="1380" height="296" alt="vm swapiness=10con 2" src="https://github.com/user-attachments/assets/9fce07fb-1c4c-4114-8c75-125a78079402" />
@@ -245,12 +245,12 @@ What the commands do ?
 ##
 <img width="814" height="68" alt="sysctl vm swappiness veryifying sysctl vm" src="https://github.com/user-attachments/assets/be13c00f-29d0-4cd0-87f0-8defe43d859d" />
 
-- Confirms optimisation is active systcl
+- Confirms optimisation is active sysctl
 
 ---------------------------------------------------------------------------------------
 ## Retesing After OPtimisation - Memory Testing
 
-Commands Used
+**Commands Used**
 stress-ng --vm 1 --vm-bytes 75% --timeout 60 --metrics-brief
 free -h
 
@@ -270,10 +270,10 @@ After optimisation, swap usage was reduced and available memory was utilised mor
 
 
 ---------------------------------------------------------------------------------------
-## Retesing after Optimsation - CPU Test
+## Retesting after Optimsation - CPU Test
 
 ##
-Commands Used
+**Commands Used**
 - stress-ng --cpu 2 --timeout 60 --metrics-brief
 - uptime
 
