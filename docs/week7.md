@@ -136,7 +136,11 @@ A legal SSH banner was configured to provide clear notice of authorised access a
 ##
 
 # Trade-off:
+
 The SSH banner does not prevent attacks directly but strengthens legal and compliance posture without affecting performance.
+
+
+
 ----------------------------------------------------------------------------------------
 ## Post-Remediation Security Audit (Lynis – After)
 
@@ -157,7 +161,7 @@ After applying selected improvements, Lynis was re-run to reassess the system. T
 
 - after enabling acct
 
-# This highlights the importance of combining automated tools with human judgement when evaluating system security.
+**This highlights the importance of combining automated tools with human judgement when evaluating system security.**
 ----------------------------------------------------------------------------------------
 
 ## Network Security Assessment (nmap)
