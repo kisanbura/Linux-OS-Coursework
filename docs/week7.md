@@ -122,7 +122,7 @@ A legal SSH banner was configured to provide clear notice of authorised access a
 ##
 <img width="850" height="34" alt="sudo nano etc issue creating banner file" src="https://github.com/user-attachments/assets/7d474026-7ef2-4c69-85d0-caf05759a8c8" />
 
--creating file banner
+- creating file banner
 
 ##
 - Going to config file
@@ -159,7 +159,7 @@ After applying selected improvements, Lynis was re-run to reassess the system. T
 
 <img width="2326" height="1454" alt="sudo lynis audit system   after enabling acct 2" src="https://github.com/user-attachments/assets/5c53e4d9-eecb-4e1c-97c6-849f84585325" />
 
-- after enabling acct
+- After enabling acct
 
 **This highlights the importance of combining automated tools with human judgement when evaluating system security.**
 ----------------------------------------------------------------------------------------
