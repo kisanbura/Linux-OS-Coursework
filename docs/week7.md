@@ -16,6 +16,7 @@ A baseline security audit was conducted using Lynis, a widely used Linux auditin
 - Installing lynis namp
 
 <img width="1406" height="608" alt="sudo apt install lynis nmap -y installing lynis nmap" src="https://github.com/user-attachments/assets/4870bbc7-0c6f-4e9b-9814-ab4680c03b91" />
+
 ##
 
 
