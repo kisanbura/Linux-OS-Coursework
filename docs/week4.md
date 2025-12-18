@@ -75,6 +75,7 @@ Verbose SSH debugging (`ssh -v`) was used from the workstation to identify which
 
 The issue was resolved by reinstalling the correct workstation public key into the server’s `authorized_keys` file and enforcing SSH-compliant file ownership and permissions. Following this correction, key-based SSH access was restored successfully without requiring a password.
 
+
 ##
 
 <img width="876" height="38" alt="week 4 permission" src="https://github.com/user-attachments/assets/137981f7-5b5e-4cc7-907a-a1bb1e3b685a" />
@@ -89,8 +90,9 @@ permission denied shows issues encountered justies troubleshooting steps
 ##
 
 <img width="1396" height="74" alt="week 4 offering public kety" src="https://github.com/user-attachments/assets/131955c2-18e6-49e8-b844-5b58d9c9d53b" />
-shows analytical troubleshooting
 
+
+This troubleshooting process demonstrates professional diagnostic practice and reinforces the importance of validation after security changes.
 
 ##
 
