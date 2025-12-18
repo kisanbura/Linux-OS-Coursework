@@ -81,7 +81,7 @@ After disabling password-based authentication, SSH access initially failed with 
 
 Verbose SSH debugging (`ssh -v`) was used from the workstation to identify which public key was being offered during authentication. The server logs confirmed that the offered key did not match the authorised public key stored on the server.
 
-The issue was resolved by reinstalling the correct workstation public key into the server’s `authorized_keys` file and enforcing SSH-compliant file ownership and permissions. Following this correction, key-based SSH access was restored successfully without requiring a password.
+- The issue was resolved by reinstalling the correct workstation public key into the server’s `authorized_keys` file and enforcing SSH-compliant file ownership and permissions. Following this correction, key-based SSH access was restored successfully without requiring a password.
 
 
 ##
