@@ -7,18 +7,20 @@
    ## 
 To evaluate the performance of my Ubuntu Server VM, I will use a remote monitoring approach where all measurements are taken through the SSH connection from my workstation. I will measure CPU, memory, disk I/O, network throughput, and application response time under different workloads.
 
+This approach reflects real-world server administration, where performance monitoring is performed remotely without direct console access.
+
 ##
 Monitoring Tools:
 
-CPU: top, htop, vmstat, mpstat
+CPU: top, htop, vmstat, mpstat - These tools provide both real-time and statistical views of processor usage.
 
-Memory: free -h, vmstat
+Memory: free -h, vmstat - These tools allow monitoring of memory allocation, availability, and pressure, helping to identify potential swapping or memory exhaustion issues.
 
-Disk: iostat, df -h, and benchmarking tools such as fio
+Disk: iostat, df -h, and benchmarking tools such as fio - fio allows controlled synthetic workloads, while iostat observes real-time I/O behaviour
 
-Network: ping, iperf3, ss, nload
+Network: ping, iperf3, ss, nload - These tools measure latency, bandwidth, and active connections, allowing identification of network performance limitations and connectivity issues.
 
-Service response: curl, ab
+Service response: curl, ab - These tools simulate client requests and measure response times, allowing evaluation of application-level performance under load.
 
 ##
 
