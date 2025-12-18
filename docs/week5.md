@@ -1,8 +1,5 @@
 # Week 5 – Advanced Security and Monitoring Infrastructure
 
-ADD MORE DETAILS MORE BETTER EXPLAINATIONS   
-BETTER REFLECTION  
-DESIGN IT BETTER)
 
 
 
@@ -176,6 +173,7 @@ running monitoring script
 output of monitoring script
 <img width="1420" height="1148" alt="output of monitoring script" src="https://github.com/user-attachments/assets/3b0b323b-5d2e-4f4f-8cb5-e9803b8d4bca" />
 
+These scripts reduce manual administration effort while ensuring consistent verification of security and performance controls.
 
 ---------------------------------------------------------------------------------------
 
