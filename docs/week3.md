@@ -27,7 +27,7 @@ Used for throughput, bandwidth, network stress.
 The selected tools were chosen not only for functionality but also for reproducibility and industry relevance. Tools such as stress-ng and fio are widely used in professional benchmarking, ensuring results are comparable and meaningful. This selection supports later quantitative analysis and aligns with best practices in performance evaluation.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
-**Application Seleetion Matrix**
+**Application Selection Matrix**
 
 | Application   | Workload Type                 | Reason for Selection                                                                              |
 | ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -124,7 +124,7 @@ curl — HTTP response time
 ##
 ab (ApacheBench) — HTTP load generation for nginx 
 ##
- 
+ This monitoring strategy ensured that performance data collected in Week 6 could be directly mapped to specific operating system subsystems.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
