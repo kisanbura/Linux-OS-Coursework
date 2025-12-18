@@ -35,6 +35,7 @@ Output Showcases Hardening index = 65
 
 Following the baseline audit, the Lynis log file was reviewed to identify security recommendations. Hardening suggestions were identified and analysed to determine which actions were appropriate for the deployment context. No high-severity warnings were reported, indicating that the system already adhered to key security best practices.
 
+
 **Command Used**
 sudo grep Suggestion /var/log/lynis.log
 #
@@ -45,7 +46,8 @@ shows where the file is
 <img width="2880" height="558" alt="sudo grep suggestion     " src="https://github.com/user-attachments/assets/1fafcf3a-cff6-461d-a16a-982808eca407" />
 shows suggestions 
 ##
-Rather than applying all recommendations indiscriminately, improvements were prioritised based on security impact, feasibility, and system stability. This selective approach reflects professional security management practices.
+Selective Hardening Decisions(Post-Audit)
+Rather than applying all Lynis recommendations indiscriminately, hardening actions were prioritised based on security impact, system stability, and relevance to the deployment context. Existing SSH hardening, firewall restrictions, and intrusion prevention mechanisms already mitigated the highest-risk findings. Additional recommendations were reviewed but deferred where the security benefit was marginal or where changes could negatively impact system usability or performance. This selective approach reflects professional security management practices rather than checklist-driven hardening.
 ----------------------------------------------------------------------------------------
 ## Selected Secuirty Improvements and Validation
 
@@ -168,6 +170,8 @@ fail2ban – intrusion detection and prevention
 apparmor – mandatory access control
 
 A review of running services confirmed that only essential services were active. No unnecessary network services were identified, reducing potential attack vectors.
+
+
 
 ----------------------------------------------------------------------------------------
 ## Remaining Risk Assessment
