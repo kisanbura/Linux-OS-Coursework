@@ -24,7 +24,7 @@ AppArmor limits what applications can access even if they are compromised, reduc
 
 <img width="1420" height="596" alt="sudo aa status output" src="https://github.com/user-attachments/assets/27de31ad-0cc5-47c7-b660-9a00666daf33" />
 
-##
+
 
 -----------------------------------------------------------------------------------------
 
@@ -44,8 +44,9 @@ Automatic updates reduce the window of exposure to known vulnerabilities by appl
 
 
 ##
-installing unattended upgrades
-<img width="1314" height="218" alt="sudo apt install unattended upgrades installing unattended upgrades" src="https://github.com/user-attachments/assets/7f4cb4dc-6992-4278-80dd-b3d09191f688" />
+- installing unattended upgrades
+
+  <img width="1314" height="218" alt="sudo apt install unattended upgrades installing unattended upgrades" src="https://github.com/user-attachments/assets/7f4cb4dc-6992-4278-80dd-b3d09191f688" />
 
 
 
@@ -55,10 +56,11 @@ installing unattended upgrades
 <img width="1150" height="42" alt="enables automatic update  sudo dpkg" src="https://github.com/user-attachments/assets/92190b40-37dd-499c-9272-600fa2cd73b1" />
 
 
-enables automatic update
+- Enables automatic update
 ##
 
-verifying configuration automatic updates
+- Verifying configuration automatic updates
+
 <img width="1132" height="118" alt="verifies configuration cat automatic updates" src="https://github.com/user-attachments/assets/92708e28-e6b7-4ee2-92ab-db97e67404fb" />
 
 -----------------------------------------------------------------------------------------
@@ -77,26 +79,29 @@ This reduces the risk of unauthorised access by limiting repeated authentication
 ### Evidence
 
 <img width="1424" height="934" alt="installing fail2ban" src="https://github.com/user-attachments/assets/8955f941-6b17-4383-82db-209b7fe67e43" />
-installing fail2ban
+
+- Installing fail2ban
+  
 
 ##
 <img width="1410" height="156" alt="fail2ban enabling" src="https://github.com/user-attachments/assets/b3cc504f-b557-4f3c-9fbb-6941edf686ad" />
 
-activating fail2ban
+- Activating fail2ban
 
 ##
 
-starting
+- Starting fail2ban
 
 <img width="920" height="36" alt="starting fail2ban" src="https://github.com/user-attachments/assets/7fbe8300-da1a-4059-8af4-d7e615dd34ee" />
 ##
 
 <img width="1396" height="412" alt="fail2ban status is active running" src="https://github.com/user-attachments/assets/d23f7d7d-001c-4038-bfa7-5636d672bc2b" />
 
-fail2ban service running
+- Shows fail2ban service running
 ##
 
-fail2ban ssh jail active
+- Shows fail2ban ssh jail is active
+  
 <img width="1254" height="432" alt="sudo fail2ban client status sshd ssh jail" src="https://github.com/user-attachments/assets/53aad501-06c4-4db7-b331-d42af2b0cee9" />
 
 ------------------------------------------------------------------------------------------
@@ -114,24 +119,29 @@ Automating security checks improves reliability and allows quick verification af
 
 ### Evidence
 
-creating script 
+- Creating script
+  
 <img width="896" height="78" alt="creating script nano secuirty baseline" src="https://github.com/user-attachments/assets/d3859be4-6827-40f5-a596-c78ab0a812d8" />
 
 ##
-security baselie script inside nano 
+- Shows security baselie script inside nano
+  
 <img width="1418" height="1070" alt="seucirty baseline script inside nano" src="https://github.com/user-attachments/assets/e62b81b9-66fa-4c0f-85cf-6e987ee6c597" />
 
 
 ##
-making script exectuable
+- Making script exectuable
+  
 <img width="896" height="42" alt="chmod making secuiry baseline executable" src="https://github.com/user-attachments/assets/08b48088-9334-4dae-a2cc-e09037192487" />
 
 ##  
-running script
+- Running the script
+  
 <img width="776" height="46" alt="running scriptt  secuirtybaseline" src="https://github.com/user-attachments/assets/23e45b87-bf2c-4391-a0b3-043ba0c6a099" />
 
 ##
-script output
+- Shows script output
+  
 <img width="1396" height="1408" alt="script output " src="https://github.com/user-attachments/assets/e515ea67-d1fc-41c7-8174-83ddfd44c5a2" />
 
 ##
@@ -153,33 +163,37 @@ The script remotely executes commands such as `uptime`, `free -h`, `df -h`, and 
 Remote monitoring reflects professional system administration practices and supports performance analysis without direct server access.
 
 ### Evidence
-creating script on powersehll
+- Creating script on powersehll
+
 <img width="1050" height="46" alt="creating monitoring script powershell" src="https://github.com/user-attachments/assets/24aea6e1-9c98-446c-a13b-563d2543cd41" />
 ##
-monitoring script
+- Monitoring the script
+
 <img width="1092" height="720" alt="monitoring script " src="https://github.com/user-attachments/assets/456da718-00d7-4f8b-addb-3031f5ba3f07" />
 
 ##
 
-allowing powershell scripts
+- Allowing powershell scripts
 
 <img width="1414" height="78" alt="allowing powershell scripts" src="https://github.com/user-attachments/assets/fefcb145-8326-404d-8d41-d7e1ab90192c" />
 
 
 ##
-running monitoring script
+
+- Running monitoring script
+
 <img width="790" height="46" alt="running the monitorscript powershell" src="https://github.com/user-attachments/assets/557d4e1c-c1b8-4b0e-8940-1d623f6b4efc" />
 ##
 
 
-output of monitoring script
+- Output of monitoring script
 <img width="1420" height="1148" alt="output of monitoring script" src="https://github.com/user-attachments/assets/3b0b323b-5d2e-4f4f-8cb5-e9803b8d4bca" />
 
 These scripts reduce manual administration effort while ensuring consistent verification of security and performance controls.
 
 ---------------------------------------------------------------------------------------
 
-##
+
 ### Trade-off: Security Hardening vs Administrative Overhead
 
 Implementing additional security controls such as Fail2ban, automatic security updates, and baseline verification scripts improves system resilience against attacks but increases administrative complexity and monitoring overhead. Each control introduces configuration files, logs, and potential false positives that require maintenance. This trade-off was considered acceptable because the server is intended to simulate a production-like environment where proactive security monitoring outweighs the cost of additional administration. Automation scripts were used to reduce manual overhead and improve consistency.
