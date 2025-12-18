@@ -239,7 +239,8 @@ What the commands do ?
 - Running sudo nano etc conf
 ##
 
-<img width="1428" height="1674" alt="week 6 swapiness image 2" src="https://github.com/user-attachments/assets/ec87738c-4151-4d9d-820b-81cd3d71fa82" />
+
+<img width="1384" height="336" alt="Week 6 swappiness image" src="https://github.com/user-attachments/assets/61b5e990-fd62-4f15-b6fc-8099649aa6be" />
 
 - Adding vm.swappiness=10 conf
 
@@ -263,6 +264,9 @@ free -h
 ##
  
  <img width="1406" height="606" alt="Commands Used week 6 stress" src="https://github.com/user-attachments/assets/b8d95f5b-7d3a-4222-94f9-9f7a30286f14" />
+
+##
+
 
 - Output after optimisation
 ##
