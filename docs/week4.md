@@ -20,7 +20,7 @@ the server.
 ##
 <img width="1310" height="880" alt="public key ss" src="https://github.com/user-attachments/assets/7738e7c8-557f-4a86-8bc8-b57387edc781" />
 
-The `ssh-keygen` command was executed on the workstation using PowerShell to generate 
+- The `ssh-keygen` command was executed on the workstation using PowerShell to generate 
 an Ed25519 key pair. The private key remains on the workstation, while the public key 
 is installed on the server.
 
