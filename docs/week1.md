@@ -3,7 +3,8 @@
 # 1. System Architecture Diagram
 
 <img width="1766" height="742" alt="architecture diagram screenshoit" src="https://github.com/user-attachments/assets/b4afb5d7-08b4-402f-ad3e-88cc3721f4da" />
-
+##
+This architecture separates the workstation and server roles, ensuring that administrative access occurs over SSH rather than console interaction. The host-only network isolates management traffic, reducing exposure while still allowing controlled access for administration.
 
 
 ##
