@@ -143,6 +143,9 @@ sudo aa-status
 
 <img width="1426" height="444" alt="sudo aa-status week 7 confirms mac is enabled" src="https://github.com/user-attachments/assets/d621ad2e-6dc6-401a-8317-e6b45cb552f1" />
 checks if apparmor and mac are active
+
+Nmap scanning confirmed that only the SSH service was exposed on the server. This validates firewall effectiveness and minimises the network attack surface.
+
 ----------------------------------------------------------------------------------------
 ## Service Inventory and Justification
 
@@ -164,7 +167,8 @@ fail2ban – intrusion detection and prevention
 
 apparmor – mandatory access control
 
-All unnecessary services were avoided to minimise the system’s attack surface.
+A review of running services confirmed that only essential services were active. No unnecessary network services were identified, reducing potential attack vectors.
+
 ----------------------------------------------------------------------------------------
 ## Remaining Risk Assessment
 
