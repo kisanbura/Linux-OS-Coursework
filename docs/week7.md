@@ -13,20 +13,22 @@ This week focused on conducting a comprehensive security audit of the Linux serv
 A baseline security audit was conducted using Lynis, a widely used Linux auditing and hardening tool. Lynis assessed system configuration, authentication mechanisms, kernel settings, services, and network exposure. The resulting hardening index provided a quantitative baseline against which improvements could be evaluated.
 
 
-installing lynis namp
+- Installing lynis namp
+
 <img width="1406" height="608" alt="sudo apt install lynis nmap -y installing lynis nmap" src="https://github.com/user-attachments/assets/4870bbc7-0c6f-4e9b-9814-ab4680c03b91" />
 ##
 
 
 **Commands Used**
-sudo lynis audit system
+- sudo lynis audit system
 ##
 <img width="1746" height="698" alt="sudo lynis audit system  running lynis audit system to check system info" src="https://github.com/user-attachments/assets/cf45e2f4-bea4-464b-8d1a-91fd682bc63c" />
 
-Running audit system
+- Running audit system
 ##
 
-Output Showcases Hardening index = 65
+- Output Showcases Hardening index = 65
+  
 <img width="2148" height="1392" alt="Lynis secuirty scan details" src="https://github.com/user-attachments/assets/469dd440-c3f2-42ca-863e-66bcbca475a1" />
 
 ##
@@ -37,17 +39,20 @@ Following the baseline audit, the Lynis log file was reviewed to identify securi
 
 
 **Command Used**
-sudo grep Suggestion /var/log/lynis.log
+- sudo grep Suggestion /var/log/lynis.log
 #
 <img width="952" height="86" alt="sudo lynis show report     show where the report is" src="https://github.com/user-attachments/assets/6ee3e4b5-9c3e-4eb4-b2ea-a869f8c616dc" />
-shows where the file is
+
+- shows where the file is
 
 ##
 <img width="2880" height="558" alt="sudo grep suggestion     " src="https://github.com/user-attachments/assets/1fafcf3a-cff6-461d-a16a-982808eca407" />
-shows suggestions 
+
+- shows suggestions 
+
 ##
-Selective Hardening Decisions(Post-Audit)
-Rather than applying all Lynis recommendations indiscriminately, hardening actions were prioritised based on security impact, system stability, and relevance to the deployment context. Existing SSH hardening, firewall restrictions, and intrusion prevention mechanisms already mitigated the highest-risk findings. Additional recommendations were reviewed but deferred where the security benefit was marginal or where changes could negatively impact system usability or performance. This selective approach reflects professional security management practices rather than checklist-driven hardening.
+**Selective Hardening Decisions(Post-Audit)- 
+Rather than applying all Lynis recommendations indiscriminately, hardening actions were prioritised based on security impact, system stability, and relevance to the deployment context. Existing SSH hardening, firewall restrictions, and intrusion prevention mechanisms already mitigated the highest-risk findings. Additional recommendations were reviewed but deferred where the security benefit was marginal or where changes could negatively impact system usability or performance. This selective approach reflects professional security management practices rather than checklist-driven hardening.**
 ----------------------------------------------------------------------------------------
 ## Selected Secuirty Improvements and Validation
 
@@ -57,22 +62,24 @@ Process accounting was enabled to enhance auditability and support forensic anal
 
 **Commands Used**
 
-sudo apt install acct -y
-sudo systemctl enable acct
-sudo systemctl start acct
-sudo systemctl status acct
+- sudo apt install acct -y
+- sudo systemctl enable acct
+- sudo systemctl start acct
+- sudo systemctl status acct
 
 ##
-installing acct
+
+- Installing acct
+
 <img width="1410" height="200" alt="sudo apt install acct " src="https://github.com/user-attachments/assets/fb4dba71-2293-4621-92a9-e281cd02d7ef" />
 
 ##
-Enabling acct
+- Enabling acct
 
 <img width="1412" height="648" alt="sudo systemctl enabling acct" src="https://github.com/user-attachments/assets/654a5e25-ebeb-491c-9d98-1af78d0932d6" />
 
 ##
-Checking statuts of acct
+- Checking statuts of acct
 
 <img width="2068" height="860" alt="sudo systemctl status acc checking status of acct" src="https://github.com/user-attachments/assets/c33dd4a7-43af-485b-9ba3-63d07352e69b" />
 
@@ -86,12 +93,12 @@ While process accounting introduces minor logging and storage overhead, this was
 Firewall rules were reviewed to ensure that only authorised SSH access from the designated workstation IP was permitted. This validation confirms a minimal network attack surface.
 
 **Commands Used**
-sudo ufw status verbose
+- sudo ufw status verbose
 ##
 
 <img width="1208" height="416" alt="sudo ufw status verbose checking firewall is correct week 7" src="https://github.com/user-attachments/assets/f2391c0b-b8ab-43fc-ab03-b545291306ab" />
 
-checking firewall rules
+- checking firewall rules
 -----------------------------------------------------------------------------------------
 ## Additional Hardening: SSH Legal Banner
 
@@ -99,21 +106,26 @@ A legal SSH banner was configured to provide clear notice of authorised access a
 
 ##
 **Commands Used**
-sudo nano /etc/issue.net
-sudo nano /etc/ssh/sshd_config.d/99-banner.conf
-sudo systemctl restart ssh
+- sudo nano /etc/issue.net
+- sudo nano /etc/ssh/sshd_config.d/99-banner.conf
+- sudo systemctl restart ssh
 
 ##
 <img width="850" height="34" alt="sudo nano etc issue creating banner file" src="https://github.com/user-attachments/assets/7d474026-7ef2-4c69-85d0-caf05759a8c8" />
-creating file banner
+
+-creating file banner
+
 ##
-Going to config file
+- Going to config file
+
 <img width="978" height="36" alt="sudo nano sshdconfig editing banner config channigng banner to enable" src="https://github.com/user-attachments/assets/76aecfd5-5eb6-47f8-ae91-fbe207043c10" />
 
 ##
-Adding Banner
+- Adding Banner
+
 <img width="730" height="126" alt="sudo editing banner adding a banner 3" src="https://github.com/user-attachments/assets/536389c8-4d26-47b5-9982-67d2d24711b6" />
 ##
+
 # Trade-off:
 The SSH banner does not prevent attacks directly but strengthens legal and compliance posture without affecting performance.
 ----------------------------------------------------------------------------------------
@@ -121,16 +133,21 @@ The SSH banner does not prevent attacks directly but strengthens legal and compl
 
 After applying selected improvements, Lynis was re-run to reassess the system. The hardening index remained unchanged, demonstrating a limitation of automated scoring tools where qualitative security improvements do not always translate into numerical score increases.
 ##
+
 **Commands Used**
-sudo lynis audit system
+- sudo lynis audit system
 
 ##
 <img width="1714" height="428" alt="sudo lynis audit reruning 2nd time" src="https://github.com/user-attachments/assets/df69778e-8259-43ef-a3d9-37208fbf4d09" />
-running audit system
+
+- Running audit system
+
 ##
 
 <img width="2326" height="1454" alt="sudo lynis audit system   after enabling acct 2" src="https://github.com/user-attachments/assets/5c53e4d9-eecb-4e1c-97c6-849f84585325" />
-after enabling acct
+
+- after enabling acct
+
 # This highlights the importance of combining automated tools with human judgement when evaluating system security.
 ----------------------------------------------------------------------------------------
 
@@ -139,12 +156,13 @@ after enabling acct
 A network security assessment was performed using nmap to identify exposed services and validate firewall effectiveness.
 
 **Command Used**
-sudo aa-status
+- sudo aa-status
 
 ##
 
 <img width="1426" height="444" alt="sudo aa-status week 7 confirms mac is enabled" src="https://github.com/user-attachments/assets/d621ad2e-6dc6-401a-8317-e6b45cb552f1" />
-checks if apparmor and mac are active
+
+- Checks if apparmor and mac are active
 
 Nmap scanning confirmed that only the SSH service was exposed on the server. This validates firewall effectiveness and minimises the network attack surface.
 
@@ -154,20 +172,20 @@ Nmap scanning confirmed that only the SSH service was exposed on the server. Thi
 Running services were reviewed to confirm that only essential services were enabled.
 
 **Commands Used**
-systemctl list-units --type=service --state=running
+- systemctl list-units --type=service --state=running
 ##
 
 <img width="1438" height="1358" alt="systemctl list units week 7 ist runing services" src="https://github.com/user-attachments/assets/0b1bd991-9177-4391-9b19-a7c61d9ee334" />
 
 # Justified Services:
 
-ssh – secure remote administration
+- ssh – secure remote administration
 
-ufw – firewall enforcement
+- ufw – firewall enforcement
 
-fail2ban – intrusion detection and prevention
+- fail2ban – intrusion detection and prevention
 
-apparmor – mandatory access control
+- apparmor – mandatory access control
 
 A review of running services confirmed that only essential services were active. No unnecessary network services were identified, reducing potential attack vectors.
 
@@ -179,7 +197,7 @@ A review of running services confirmed that only essential services were active.
 Despite significant hardening, some residual risks remain. SSH access, although restricted and key-based, remains an exposed service. Additionally, as the system operates within a virtualised environment, its security is partially dependent on the host operating system and hypervisor, which are outside the control of the guest OS. 
 ----------------------------------------------------------------------------------------
 
-##
+
 
 ### Trade-off: Automated Security Scoring vs Human Risk Assessment
 
