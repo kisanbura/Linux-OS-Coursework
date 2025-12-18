@@ -13,7 +13,7 @@ This week focused on conducting a comprehensive security audit of the Linux serv
 A baseline security audit was conducted using Lynis, a widely used Linux auditing and hardening tool. Lynis assessed system configuration, authentication mechanisms, kernel settings, services, and network exposure. The resulting hardening index provided a quantitative baseline against which improvements could be evaluated.
 
 
-- Installing lynis namp
+- Installing Lynis Namp
 
 <img width="1406" height="608" alt="sudo apt install lynis nmap -y installing lynis nmap" src="https://github.com/user-attachments/assets/4870bbc7-0c6f-4e9b-9814-ab4680c03b91" />
 
@@ -37,6 +37,11 @@ A baseline security audit was conducted using Lynis, a widely used Linux auditin
 # Review of Lynis Findings
 
 Following the baseline audit, the Lynis log file was reviewed to identify security recommendations. Hardening suggestions were identified and analysed to determine which actions were appropriate for the deployment context. No high-severity warnings were reported, indicating that the system already adhered to key security best practices.
+
+## Security Posture Evaluation
+
+The Lynis audit confirmed that the system’s existing security controls implemented in earlier weeks (SSH hardening, firewall rules, AppArmor, and Fail2Ban) are effective and correctly configured. The hardening index of 65 reflects a balanced security posture appropriate for a virtualised server environment, where excessive hardening could negatively impact usability and maintainability. Overall, the audit validated prior security decisions rather than exposing critical weaknesses.
+
 
 
 **Command Used**
