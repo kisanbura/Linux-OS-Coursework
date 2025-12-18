@@ -236,6 +236,7 @@ What the commands do ?
 
 <img width="834" height="44" alt="sudo nano etcsystctl   entering conf file" src="https://github.com/user-attachments/assets/069f3a84-2183-41b5-8625-c1cf6dc4337b" />
 
+
 - Running sudo nano etc conf
 ##
 
@@ -247,7 +248,7 @@ What the commands do ?
 - Adding vm.swappiness=10 conf
 
 
-<img width="1380" height="296" alt="vm swapiness=10con 2" src="https://github.com/user-attachments/assets/9fce07fb-1c4c-4114-8c75-125a78079402" />
+
 
 ##
 
