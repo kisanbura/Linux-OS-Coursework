@@ -22,6 +22,9 @@ Used for throughput, bandwidth, network stress.
 
  Lightweight web server for latency and response tests.
 
+##
+
+The selected tools were chosen not only for functionality but also for reproducibility and industry relevance. Tools such as stress-ng and fio are widely used in professional benchmarking, ensuring results are comparable and meaningful. This selection supports later quantitative analysis and aligns with best practices in performance evaluation.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 **Application Seleetion Matrix**
