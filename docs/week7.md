@@ -159,7 +159,7 @@ After applying selected improvements, Lynis was re-run to reassess the system. T
 
 <img width="2326" height="1454" alt="sudo lynis audit system   after enabling acct 2" src="https://github.com/user-attachments/assets/5c53e4d9-eecb-4e1c-97c6-849f84585325" />
 
-- After enabling acct
+- Output after enabling acct
 
 **This highlights the importance of combining automated tools with human judgement when evaluating system security.**
 ----------------------------------------------------------------------------------------
