@@ -178,8 +178,9 @@ Disk I/O testing revealed increased write latency during random operations, refl
 ## Network Performance Testing
 
  **Commands Used**
-iperf3 -s
-iperf3 -c 127.0.0.1
+- iperf3 -s
+
+- iperf3 -c 127.0.0.1
 
 ##
 What the commands do?
