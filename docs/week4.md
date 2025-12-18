@@ -49,7 +49,10 @@ authentication methods and restricting privileged access.
 ## Before Editing
 <img width="1430" height="1360" alt="before changing sshd config " src="https://github.com/user-attachments/assets/31649e3b-6e6a-42e6-acd6-06420e6382c1" />
 
-- After editing SSh config file
+##
+
+
+##After editing SSh config file
 
 ##
 <img width="1108" height="370" alt="week 4 sshconfig" src="https://github.com/user-attachments/assets/f01672b3-9453-4a97-a70f-565fc4a6c698" />
