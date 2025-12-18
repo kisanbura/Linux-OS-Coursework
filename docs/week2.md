@@ -1,8 +1,6 @@
-(((ADD COMMAND FIGURATIONS SHOWING WHICH COMMANDS TO USE )(((
-MORE DETAIL EXPLAINAITIONS
-ADD REFLECTION
 
-# Week 2 - Security Planning and Testing Methodology 
+
+## Week 2 - Security Planning and Testing Methodology 
 
 1. **Performance Testing Plan**
 
@@ -55,3 +53,5 @@ Load Testing: Run CPU-intensive, memory-intensive, disk, network, and server app
 | **Brute-force SSH Attacks**   | Attackers attempt to guess SSH passwords through repeated login attempts. | Enable key-based authentication, disable password logins, restrict SSH to the host-only network, and configure Fail2Ban.   |
 | **Privilege Escalation**      | An attacker who gains limited access may attempt to become root.          | Use non-root administrative accounts, restrict sudo access, enforce AppArmor profiles, and ensure secure file permissions. |
 | **Unpatched Vulnerabilities** | Outdated packages can contain known exploits that attackers may target.   | Enable automatic security updates and regularly apply patches.                                                             |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+These security and performance plans directly informed later implementation decisions in Weeks 4–7. For example, the threat model guided SSH hardening and firewall restrictions, while the performance methodology was applied during structured testing in Week 6.
