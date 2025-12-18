@@ -9,7 +9,6 @@ configured, insecure access methods were disabled, a non-root administrative use
 created, and a firewall was deployed to restrict network access.
 
 
-##
 
 ## SSH Key-Based Authentication
 
