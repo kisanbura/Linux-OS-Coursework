@@ -238,14 +238,18 @@ What the commands do ?
 
 - Running sudo nano etc conf
 ##
-<img width="1416" height="1448" alt="vm swapiness=10 conf" src="https://github.com/user-attachments/assets/e02fd500-d0e7-4e5e-9ce7-36a5b4938243" />
+
+<img width="1428" height="1674" alt="week 6 swapiness image 2" src="https://github.com/user-attachments/assets/ec87738c-4151-4d9d-820b-81cd3d71fa82" />
+
 - Adding vm.swappiness=10 conf
 
 
 <img width="1380" height="296" alt="vm swapiness=10con 2" src="https://github.com/user-attachments/assets/9fce07fb-1c4c-4114-8c75-125a78079402" />
 
 ##
-<img width="814" height="68" alt="sysctl vm swappiness veryifying sysctl vm" src="https://github.com/user-attachments/assets/be13c00f-29d0-4cd0-87f0-8defe43d859d" />
+
+<img width="788" height="76" alt="week 6 confirms optimisaiton is active sysctl" src="https://github.com/user-attachments/assets/10593acf-1954-4fcb-9e95-3d633cfaa42d" />
+
 
 - Confirms optimisation is active sysctl
 
@@ -257,12 +261,14 @@ stress-ng --vm 1 --vm-bytes 75% --timeout 60 --metrics-brief
 free -h
 
 ##
-<img width="2072" height="488" alt="stress-ng rerun memory test after optiimsaiation" src="https://github.com/user-attachments/assets/a3ba8da5-c28b-49f3-ac21-1022e11f438e" />
+ 
+ <img width="1406" height="606" alt="Commands Used week 6 stress" src="https://github.com/user-attachments/assets/b8d95f5b-7d3a-4222-94f9-9f7a30286f14" />
 
 - Output after optimisation
 ##
 
-<img width="1552" height="160" alt="free -h monitoring memory after optimisation re running" src="https://github.com/user-attachments/assets/098c9538-508d-44a7-b2a4-2f6f0e89c88d" />
+<img width="1434" height="272" alt="free -h output week 6" src="https://github.com/user-attachments/assets/fee61add-e499-497c-b1d8-f88f5e68513d" />
+
 
 - after optimisation output
 
