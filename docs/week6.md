@@ -27,33 +27,33 @@ Commands used
 
 What the commands do?
 
-uptime - reports system load averages
-free -h - shows memory usage in human-readable format
-df -h / - shows memory usage in human-readable format
-iostat - reports CPU and disk I/O activity
+- uptime - reports system load averages
+- free -h - shows memory usage in human-readable format
+- df -h / - shows memory usage in human-readable format
+- iostat - reports CPU and disk I/O activity
 
 ##
 
 <img width="1272" height="84" alt="uptime command" src="https://github.com/user-attachments/assets/20c03a30-b869-4117-88d7-1805bd4d43d3" />
 
-uptime  output
+- uptime  output
 
 ##
 
 <img width="1424" height="224" alt="free -h powershell" src="https://github.com/user-attachments/assets/e6ea85d7-7e30-4353-88a3-2a9a8f8ed46e" />
 
-free -h output
+- free -h output
 
 ##
 <img width="992" height="110" alt="df -h  disk space usage" src="https://github.com/user-attachments/assets/d207d55c-8d40-4dc7-b450-b76414a47809" />
 
-df -h output
+- df -h output
 
 ##
 
 <img width="1836" height="1010" alt="iostat" src="https://github.com/user-attachments/assets/f37ac08d-65dd-4673-bd80-28acde9e38f4" />
 
-iostat output
+- iostat output
 
 
 ##
@@ -66,12 +66,12 @@ Baseline results showed low load averages, high available memory, and minimal di
 
 # Commands Used
 
-stress-ng --cpu 2 --timeout 60 --metrics-brief
-uptime
-top
+- stress-ng --cpu 2 --timeout 60 --metrics-brief
+- uptime
+- top
 
 ##
-What the commands do
+What the commands do?
 
 - stress-ng --cpu generates sustained CPU load using worker threads
 
@@ -81,29 +81,29 @@ What the commands do
 
 
 ##
-Installing stress-ng
+- Installing stress-ng
 
 <img width="1404" height="234" alt="sudo apt install stress ng " src="https://github.com/user-attachments/assets/5786874e-5af5-4d65-ab4a-fd00507fdf45" />
 ##
 
 
 <img width="1426" height="520" alt="stress-ng command" src="https://github.com/user-attachments/assets/f67bcded-8b81-412b-bccc-491a06e84f9d" />
-Stress-ng Testing memory
+- Stress-ng Testing memory
 
 ##
 <img width="1246" height="88" alt="uptime increased significantly after test" src="https://github.com/user-attachments/assets/2284778d-7f32-4dab-82ec-92b350fcd668" />
-uptime out increased after test
+- uptime output increased after test
 
 ##
 
 <img width="1380" height="254" alt="top comamnd" src="https://github.com/user-attachments/assets/05cf09f0-f8a8-4771-bcd5-07151c7301bc" />
 
-top output
+- top output
 
 
 <img width="1400" height="1418" alt="top command 2" src="https://github.com/user-attachments/assets/73bcfc11-714d-45e5-b049-a4f6fcf06ba9" />
 
-shows realtime cpu usage
+- shows realtime cpu usage
 ##
 
 Analysis
@@ -118,23 +118,23 @@ During CPU stress testing, load averages increased significantly relative to bas
 - free -h
 
   ##
-  What the commands do
+  What the commands do?
 
-stress-ng --vm allocates large blocks of memory
+- stress-ng --vm allocates large blocks of memory
 
 --vm-bytes 75% consumes most available RAM
 
-free -h monitors memory availability and usage
+- free -h monitors memory availability and usage
 ##
 
 <img width="1408" height="554" alt="stress-ng testing memory performanc test" src="https://github.com/user-attachments/assets/b21f8352-61e9-4a8d-af32-ff3ab1a7382d" />
 
-testing memory
+- Testing memory
 
 ##
 <img width="1406" height="272" alt="free -h monitoring memory after test" src="https://github.com/user-attachments/assets/eb71f468-5d2a-4950-ab09-b0c1676984bf" />
 
-free -h output 
+- free -h output 
 
 ##
 Analysis
@@ -143,12 +143,12 @@ Memory pressure significantly reduced available RAM and increased memory utilisa
 
 ----------------------------------------------------------------------------------------
 ## Disk I/O Performance Testing
-
+# Commanda Used
  fio --name=randwrite --ioengine=libaio --rw=randwrite --bs=4k --size=200M --numjobs=1 --runtime=60 --group_reporting
 
 iostat
 
-What the commands do
+What the commands do?
 
 - fio performs random disk write operations
 
@@ -181,7 +181,7 @@ iperf3 -s
 iperf3 -c 127.0.0.1
 
 ##
-What the commands do
+What the commands do?
 
 iperf3 -s starts a network test server
 
@@ -190,13 +190,17 @@ iperf3 -c measures TCP throughput between client and server
 ##
 <img width="1664" height="808" alt="iperf3 -s testing networking performance 2" src="https://github.com/user-attachments/assets/19ddcaca-e939-4a96-9011-43622e2ec859" />
 
-iperff3 -s 
+- output of iperff3 -s 
 
 ##
 <img width="1532" height="750" alt="iperf3 -c 127 0 0 1" src="https://github.com/user-attachments/assets/b10d8e96-9a08-4ed9-b061-7ea399e9ed0f" />
 
-iperf3 -c
+- output of iperf3 -c
 
+
+# Analysis
+
+The iperf3 test showed high and stable throughput, indicating that the Linux networking stack and virtual network interface handle data transfer efficiently under load. As the test was performed over the loopback interface (127.0.0.1), the results reflect operating system–level network performance rather than physical network conditions. This approach ensured repeatable measurements but does not account for real-world latency or external network congestion, which would be factors in a production environment.
 
 ----------------------------------------------------------------------------------------
 
@@ -213,27 +217,27 @@ sysctl vm.swappiness
 
 What the commands do ?
 
-sysctl vm.swappiness=10 reduces swap aggressiveness
+- sysctl vm.swappiness=10 reduces swap aggressiveness
 
-Persisting the value ensures the change survives reboots
+- Persisting the value ensures the change survives reboots
 
-Verification confirms the optimisation is active
+- Verification confirms the optimisation is active
 
 
 ## 
 
 <img width="894" height="118" alt="sudo sysctl vm swapiness reduces aggresive swapping improves performance" src="https://github.com/user-attachments/assets/2b85ae27-680d-4f9f-bc7d-7309bd6e96ac" />
 
-sudo sysctl vm 
+-   - Running sudo sysctl vm 
 
 ##
 
 <img width="834" height="44" alt="sudo nano etcsystctl   entering conf file" src="https://github.com/user-attachments/assets/069f3a84-2183-41b5-8625-c1cf6dc4337b" />
 
-sudo nano etc conf
+- Running sudo nano etc conf
 ##
 <img width="1416" height="1448" alt="vm swapiness=10 conf" src="https://github.com/user-attachments/assets/e02fd500-d0e7-4e5e-9ce7-36a5b4938243" />
-adding vm.swapiness=10 conf
+- Adding vm.swapiness=10 conf
 
 
 <img width="1380" height="296" alt="vm swapiness=10con 2" src="https://github.com/user-attachments/assets/9fce07fb-1c4c-4114-8c75-125a78079402" />
@@ -241,7 +245,7 @@ adding vm.swapiness=10 conf
 ##
 <img width="814" height="68" alt="sysctl vm swappiness veryifying sysctl vm" src="https://github.com/user-attachments/assets/be13c00f-29d0-4cd0-87f0-8defe43d859d" />
 
-confirms optimisation is active systcl
+- Confirms optimisation is active systcl
 
 ---------------------------------------------------------------------------------------
 ## Retesing After OPtimisation - Memory Testing
@@ -253,12 +257,12 @@ free -h
 ##
 <img width="2072" height="488" alt="stress-ng rerun memory test after optiimsaiation" src="https://github.com/user-attachments/assets/a3ba8da5-c28b-49f3-ac21-1022e11f438e" />
 
-output after optimisation
+- Output after optimisation
 ##
 
 <img width="1552" height="160" alt="free -h monitoring memory after optimisation re running" src="https://github.com/user-attachments/assets/098c9538-508d-44a7-b2a4-2f6f0e89c88d" />
 
-after optimisation output
+- after optimisation output
 
 ##
 # Analysis
@@ -270,20 +274,19 @@ After optimisation, swap usage was reduced and available memory was utilised mor
 
 ##
 Commands Used
-stress-ng --cpu 2 --timeout 60 --metrics-brief
-uptime
+- stress-ng --cpu 2 --timeout 60 --metrics-brief
+- uptime
 
 
 ##
 
 <img width="1412" height="534" alt="stress-ng command retesting cpu test re run" src="https://github.com/user-attachments/assets/2677cf10-ebf7-44b8-a2a4-c6600a441875" />
-
+- Running stress-ng
 ##
 
 
 <img width="1206" height="78" alt="uptime command retesting cpu test rerun output" src="https://github.com/user-attachments/assets/da5b4fa8-40f6-4988-ab93-b1c95c124100" />
-
-output after optimisation
+- output after optimisation
 ----------------------------------------------------------------------------------------
 ## Before v After Comparison
 
