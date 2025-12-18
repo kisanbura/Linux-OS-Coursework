@@ -43,6 +43,7 @@ Following the baseline audit, the Lynis log file was reviewed to identify securi
 The Lynis audit confirmed that the system’s existing security controls implemented in earlier weeks (SSH hardening, firewall rules, AppArmor, and Fail2Ban) are effective and correctly configured. The hardening index of 65 reflects a balanced security posture appropriate for a virtualised server environment, where excessive hardening could negatively impact usability and maintainability. Overall, the audit validated prior security decisions rather than exposing critical weaknesses.
 
 
+##
 
 **Command Used**
 - sudo grep Suggestion /var/log/lynis.log
