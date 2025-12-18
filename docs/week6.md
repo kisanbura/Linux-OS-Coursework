@@ -115,6 +115,7 @@ During CPU stress testing, load averages increased significantly relative to bas
 
 **Commands Used**
 - stress-ng --vm 1 --vm-bytes 75% --timeout 60 --metrics-brief
+
 - free -h
 
   ##
