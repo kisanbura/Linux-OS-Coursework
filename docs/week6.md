@@ -254,7 +254,8 @@ What the commands do ?
 
 ##
 
-<img width="788" height="76" alt="week 6 confirms optimisaiton is active sysctl" src="https://github.com/user-attachments/assets/10593acf-1954-4fcb-9e95-3d633cfaa42d" />
+<img width="814" height="68" alt="sysctl vm swappiness veryifying sysctl vm" src="https://github.com/user-attachments/assets/ece288c6-64b6-4332-8fbc-d062194f1e38" />
+
 
 
 - Confirms optimisation is active sysctl
