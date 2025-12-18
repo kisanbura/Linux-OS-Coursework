@@ -137,6 +137,8 @@ script output
 ##
 
 <img width="1374" height="716" alt="script output 2" src="https://github.com/user-attachments/assets/5da0494a-5ac7-4139-9d4c-60b68c1c8a79" />
+##
+Automating these checks reduces human error and ensures consistent security posture over time, particularly after updates or reboots.
 
 -----------------------------------------------------------------------------------
 ## Remote Monitoring Script
