@@ -10,13 +10,13 @@ This week focused on implementing advanced security controls and building automa
 
 ## Mandatory Access Control (AppArmor)
 
-### What I did
-I verified that AppArmor is enabled and enforcing security profiles on the Ubuntu server.
+### What I did?
+ I verified that AppArmor is enabled and enforcing security profiles on the Ubuntu server.
 
-### What the command does
+### What the command does?
 The `aa-status` command displays whether AppArmor is active, how many profiles are loaded, and whether they are running in enforce mode.
 
-### Why this matters
+### Why this matters?
 AppArmor limits what applications can access even if they are compromised, reducing the impact of potential exploits.
 
 <img width="1160" height="194" alt="sudo aa status checking aa status" src="https://github.com/user-attachments/assets/577367ef-89bd-4e69-858f-ed80f0084de2" />
@@ -31,14 +31,14 @@ AppArmor limits what applications can access even if they are compromised, reduc
 
 ## Automatic Security Updates
 
-### What I did
+### What I did?
 I enabled unattended security updates to ensure the system automatically applies critical patches.
 
-### What the commands do
+### What the commands do?
 The `unattended-upgrades` package installs the automatic update service.  
 `dpkg-reconfigure unattended-upgrades` enables it, and viewing the configuration file confirms it is active.
 
-### Why this matters
+### Why this matters?
 Automatic updates reduce the window of exposure to known vulnerabilities by applying security patches without manual intervention.
 
 
@@ -67,13 +67,13 @@ Automatic updates reduce the window of exposure to known vulnerabilities by appl
 
 ## Intrusion Prevention with Fail2Ban
 
-### What I did
+### What I did?
 I installed and enabled Fail2Ban to protect the SSH service from brute-force login attempts.
 
-### What the commands do
+### What the commands do?
 Fail2Ban monitors authentication logs and automatically blocks IP addresses that generate repeated failed login attempts. The SSH jail confirms that SSH protection is active.
 
-### Why this matters
+### Why this matters?
 This reduces the risk of unauthorised access by limiting repeated authentication attempts over time.
 
 ### Evidence
@@ -108,13 +108,13 @@ This reduces the risk of unauthorised access by limiting repeated authentication
 
 ## Security Baseline Verification Script
 
-### What I did
+### What I did?
 I created and executed a script to automatically verify that all implemented security controls remain active.
 
-### What the script does
+### What the script does?
 The script checks SSH configuration, firewall rules, AppArmor status, automatic updates, and Fail2Ban service status in a single automated run.
 
-### Why this matters
+### Why this matters?
 Automating security checks improves reliability and allows quick verification after system changes or reboots.
 
 ### Evidence
@@ -153,16 +153,16 @@ Automating these checks reduces human error and ensures consistent security post
 -----------------------------------------------------------------------------------
 ## Remote Monitoring Script
 
-### What I did
+### What I did?
 I created a workstation-side monitoring script that connects to the server via SSH and retrieves live performance metrics.
 
-### What the script does
+### What the script does?
 The script remotely executes commands such as `uptime`, `free -h`, `df -h`, and `ps` to collect system performance data without logging into the server interactively.
 
-### Why this matters
+### Why this matters?
 Remote monitoring reflects professional system administration practices and supports performance analysis without direct server access.
 
-### Evidence
+##
 - Creating script on powersehll
 
 <img width="1050" height="46" alt="creating monitoring script powershell" src="https://github.com/user-attachments/assets/24aea6e1-9c98-446c-a13b-563d2543cd41" />
