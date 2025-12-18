@@ -311,6 +311,8 @@ Trade-off 3: Disk Throughput vs Latency
 Security auditing and monitoring introduce measurable system overhead through increased disk I/O, CPU usage, and memory consumption. Enabling process accounting and frequent monitoring improves visibility and forensic capability but can slightly reduce performance under load. This trade-off was evaluated during performance testing, where the impact of logging was observed to be minimal relative to the security benefits. As the system operates within a virtualised environment, prioritising auditability over marginal performance gains was considered appropriate.
 
 Random disk writes improved throughput realism but increased latency, demonstrating the balance between I/O performance and responsiveness.
+
+#These results demonstrate how operating system performance is shaped by scheduler behaviour, memory management policies, and virtualisation constraints rather than application behaviour alone.
 ----------------------------------------------------------------------------------------
 ## Reflection
 
