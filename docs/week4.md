@@ -1,4 +1,4 @@
-# Week 4 - **Initial System Configuratoin & Security Implmentation**
+# Week 4 - **Initial System Configuration & Security Implementation**
 
 
  ## Overview
@@ -198,7 +198,7 @@ The following commands demonstrate that the server is being managed remotely via
 with active services and enforced security controls.
 
 ##
-- whaomi 
+- whoami 
 <img width="504" height="78" alt="whoami" src="https://github.com/user-attachments/assets/5613d69b-8583-42fd-863a-31f86d763264" />
 ##
 
